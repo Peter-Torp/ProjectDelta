@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 m_EditorVersion: 2018.3.0f2
 =======
 m_EditorVersion: 2018.4.16f1
@@ -7,3 +8,6 @@ m_EditorVersion: 2018.4.16f1
 =======
 m_EditorVersion: 2018.3.14f1
 >>>>>>> parent of 2e8b5d8... Assets
+=======
+m_EditorVersion: 2018.3.0f2
+>>>>>>> parent of f0c7e44... Lel
