@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: 6ff430a5827e8144684888de580aac93
+timeCreated: 1518706147
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: beam_2_low
+    100002: beam_3_low
+    100004: beam_4_low
+    100006: beam_5_low
+    100008: beam_6_low
+    100010: beam_7_low
+    100012: beam_8_low
+    100014: beam_9_low
+    100016: beam_low
+    100018: //RootNode
+    100020: cap_1_low
+    100022: cap_2_low
+    100024: cocnrete_3_low
+    100026: cocnrete_4_low
+    100028: concrete_1_low
+    100030: concrete_2_low
+    100032: floor_low
+    100034: ornament_1_cap_low
+    100036: ornament_1_low
+    100038: ornament_2_cap_low
+    100040: ornament_2_low
+    100042: pilar_1_low
+    100044: pilar_1_up_low
+    100046: pilar_2_low
+    100048: pilar_2_up_low
+    100050: pilar_3_low
+    100052: pilar_3_up_low
+    100054: pilar_4_low
+    100056: pilar_up_4_low
+    400000: beam_2_low
+    400002: beam_3_low
+    400004: beam_4_low
+    400006: beam_5_low
+    400008: beam_6_low
+    400010: beam_7_low
+    400012: beam_8_low
+    400014: beam_9_low
+    400016: beam_low
+    400018: //RootNode
+    400020: cap_1_low
+    400022: cap_2_low
+    400024: cocnrete_3_low
+    400026: cocnrete_4_low
+    400028: concrete_1_low
+    400030: concrete_2_low
+    400032: floor_low
+    400034: ornament_1_cap_low
+    400036: ornament_1_low
+    400038: ornament_2_cap_low
+    400040: ornament_2_low
+    400042: pilar_1_low
+    400044: pilar_1_up_low
+    400046: pilar_2_low
+    400048: pilar_2_up_low
+    400050: pilar_3_low
+    400052: pilar_3_up_low
+    400054: pilar_4_low
+    400056: pilar_up_4_low
+    2300000: beam_2_low
+    2300002: beam_3_low
+    2300004: beam_4_low
+    2300006: beam_5_low
+    2300008: beam_6_low
+    2300010: beam_7_low
+    2300012: beam_8_low
+    2300014: beam_9_low
+    2300016: beam_low
+    2300018: cap_1_low
+    2300020: cap_2_low
+    2300022: cocnrete_3_low
+    2300024: cocnrete_4_low
+    2300026: concrete_1_low
+    2300028: concrete_2_low
+    2300030: floor_low
+    2300032: ornament_1_cap_low
+    2300034: ornament_1_low
+    2300036: ornament_2_cap_low
+    2300038: ornament_2_low
+    2300040: pilar_1_low
+    2300042: pilar_1_up_low
+    2300044: pilar_2_low
+    2300046: pilar_2_up_low
+    2300048: pilar_3_low
+    2300050: pilar_3_up_low
+    2300052: pilar_4_low
+    2300054: pilar_up_4_low
+    3300000: beam_2_low
+    3300002: beam_3_low
+    3300004: beam_4_low
+    3300006: beam_5_low
+    3300008: beam_6_low
+    3300010: beam_7_low
+    3300012: beam_8_low
+    3300014: beam_9_low
+    3300016: beam_low
+    3300018: cap_1_low
+    3300020: cap_2_low
+    3300022: cocnrete_3_low
+    3300024: cocnrete_4_low
+    3300026: concrete_1_low
+    3300028: concrete_2_low
+    3300030: floor_low
+    3300032: ornament_1_cap_low
+    3300034: ornament_1_low
+    3300036: ornament_2_cap_low
+    3300038: ornament_2_low
+    3300040: pilar_1_low
+    3300042: pilar_1_up_low
+    3300044: pilar_2_low
+    3300046: pilar_2_up_low
+    3300048: pilar_3_low
+    3300050: pilar_3_up_low
+    3300052: pilar_4_low
+    3300054: pilar_up_4_low
+    4300000: concrete_1_low
+    4300002: beam_low
+    4300004: ornament_1_cap_low
+    4300006: ornament_2_cap_low
+    4300008: concrete_2_low
+    4300010: ornament_2_low
+    4300012: floor_low
+    4300014: pilar_1_low
+    4300016: cap_1_low
+    4300018: cap_2_low
+    4300020: pilar_2_low
+    4300022: ornament_1_low
+    4300024: beam_2_low
+    4300026: pilar_1_up_low
+    4300028: pilar_2_up_low
+    4300030: pilar_3_up_low
+    4300032: pilar_up_4_low
+    4300034: pilar_3_low
+    4300036: pilar_4_low
+    4300038: beam_3_low
+    4300040: beam_4_low
+    4300042: cocnrete_3_low
+    4300044: cocnrete_4_low
+    4300046: beam_5_low
+    4300048: beam_6_low
+    4300050: beam_7_low
+    4300052: beam_8_low
+    4300054: beam_9_low
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: beam
+    second: {fileID: 2100000, guid: 4ab630cba9383c649aafdec8610e65c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete
+    second: {fileID: 2100000, guid: a2451b42291aea94eb5a11db82624a17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: 1adc600042a3af248a01188c092a323e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
