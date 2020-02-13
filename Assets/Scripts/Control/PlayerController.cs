@@ -10,22 +10,23 @@ namespace RPG.Control
     public class PlayerController : MonoBehaviour
     {
         private void Update()
-        {
+        {   //switch between movement and combat
             if (InteractWithCombat()) return;
             if (InteractWithMovement()) return;
-            print("Nothing to do");
+            //print("Nothing to do");
         }
 
+        /*When clicking on a target -> Attack*/
         private bool InteractWithCombat()
         {
             RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
             foreach (RaycastHit hit in hits)
             {
-                CombatTarget target = hit.transform.GetComponent<CombatTarget>();
+                CombatTarget target = hit.transform.GetComponent<CombatTarget>();   //get the taget component when clicked on
                 if (target == null) continue;
 
-                if (Input.GetMouseButtonDown(0))
-                {
+                if (Input.GetMouseButtonDown(0))    //left MB
+                {   //get the figter object and attack a target.
                     GetComponent<Fighter>().Attack(target);
                 }
                 return true;
@@ -46,7 +47,7 @@ namespace RPG.Control
                 }
                 return true;
             }
-            return false;
+            return false;       //if player reaches edge of the world. -> Print("Nothing to do")
         }
 
         private static Ray GetMouseRay()
