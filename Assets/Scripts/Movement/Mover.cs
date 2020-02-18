@@ -1,6 +1,6 @@
-﻿using RPG.Core;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using RPG.Core;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -10,13 +10,11 @@ namespace RPG.Movement
     {
         [SerializeField] Transform target;
 
-        NavMeshAgent navMesthAgent;
+        NavMeshAgent navMeshAgent;
 
-        private void Start()
-        {
-            navMesthAgent = GetComponent<NavMeshAgent>();
+        private void Start() {
+            navMeshAgent = GetComponent<NavMeshAgent>();
         }
-
 
         void Update()
         {
@@ -31,24 +29,21 @@ namespace RPG.Movement
 
         public void MoveTo(Vector3 destination)
         {
-            navMesthAgent.destination = destination;
-            navMesthAgent.isStopped = false;
+            navMeshAgent.destination = destination;
+            navMeshAgent.isStopped = false;
         }
 
         public void Cancel()
         {
-            navMesthAgent.isStopped = true;
+            navMeshAgent.isStopped = true;
         }
 
         private void UpdateAnimator()
         {
-            Vector3 velocity = navMesthAgent.velocity;
+            Vector3 velocity = navMeshAgent.velocity;
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             float speed = localVelocity.z;
             GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
-
-
     }
 }
-

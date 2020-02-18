@@ -1,13 +1,1 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-m_EditorVersion: 2018.3.0f2
-=======
-m_EditorVersion: 2018.4.16f1
->>>>>>> a5b59a98711d5c7efe5c9dc17106505b7f8ff4f4
-=======
-m_EditorVersion: 2018.3.14f1
->>>>>>> parent of 2e8b5d8... Assets
-=======
-m_EditorVersion: 2018.3.0f2
->>>>>>> parent of f0c7e44... Lel
+m_EditorVersion: 2018.3.3f1
