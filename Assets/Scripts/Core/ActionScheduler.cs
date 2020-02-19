@@ -6,6 +6,7 @@ namespace RPG.Core
     {
         IAction currentAction;
 
+        /*determine if doing an action or action is to be canceled cancel*/
         public void StartAction(IAction action)
         {
             if (currentAction == action) return;
