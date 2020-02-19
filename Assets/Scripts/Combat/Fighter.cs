@@ -44,6 +44,7 @@ namespace RPG.Combat
             }
         }
 
+        /*Bug solved: attack animation is canceled when attack is stopped*/
         private void TriggerAttack()
         {
             GetComponent<Animator>().ResetTrigger("attack");
@@ -93,6 +94,9 @@ namespace RPG.Combat
             target = null;
         }
 
+        /*Stop the attack when not in combat.
+        Bug solved: reset trigger so stop attack attribute is not on when attacking again
+        */
         private void StopAttack()
         {
             GetComponent<Animator>().SetTrigger("stopAttack");
