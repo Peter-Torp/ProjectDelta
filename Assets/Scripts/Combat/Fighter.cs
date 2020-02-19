@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using RPG.Movement;
 using RPG.Core;
 
@@ -12,7 +12,7 @@ namespace RPG.Combat
 
         Health target;   //We get access to anything we've put in Health, we do this because we know ALL enemies has health
 
-        float timeSinceLastAttack = 0;
+        float timeSinceLastAttack = Mathf.Infinity; //last attack happened a long time ago
 
         //Update is ran on every frame
         private void Update()
@@ -67,7 +67,7 @@ namespace RPG.Combat
             return Vector3.Distance(transform.position, target.transform.position) < weaponRange;
         }
 
-        public bool CanAttack(CombatTarget combatTarget)
+        public bool CanAttack(GameObject combatTarget)
         {
             if (combatTarget == null)
             {
@@ -77,7 +77,7 @@ namespace RPG.Combat
             return targetToTest != null && !targetToTest.IsDead(); //Checks if our target is not null and is not dead
         }
 
-        public void Attack(CombatTarget combatTarget)
+        public void Attack(GameObject combatTarget)
         {
             //We use our StartAction from our ActionScheduler, which is used to say if we cancel or start an action
             GetComponent<ActionScheduler>().StartAction(this);
