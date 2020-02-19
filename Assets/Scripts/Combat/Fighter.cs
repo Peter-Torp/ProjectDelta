@@ -6,22 +6,25 @@ namespace RPG.Combat
 {
     public class Fighter : MonoBehaviour, IAction
     {
-        [SerializeField] float weaponRange = 2f;
-        [SerializeField] float timeBetweenAttacks = 1f;
-        [SerializeField] float weaponDamage = 5f;
+        [SerializeField] float weaponRange = 2f; //Our WeaponRange
+        [SerializeField] float timeBetweenAttacks = 1f; //Time between our fighters attacks
+        [SerializeField] float weaponDamage = 5f; //Our damage the weapon does
 
-        Transform target;
+        Health target;   //We get access to anything we've put in Health, we do this because we know ALL enemies has health
+
         float timeSinceLastAttack = 0;
 
+        //Update is ran on every frame
         private void Update()
         {
             timeSinceLastAttack += Time.deltaTime;
 
             if (target == null) return;
+            if (target.IsDead()) return;
 
             if (!GetIsInRange())
             {
-                GetComponent<Mover>().MoveTo(target.position);
+                GetComponent<Mover>().MoveTo(target.transform.position);
             }
             else
             {
@@ -32,35 +35,68 @@ namespace RPG.Combat
 
         private void AttackBehaviour()
         {
-            if (timeSinceLastAttack > timeBetweenAttacks) 
+            transform.LookAt(target.transform); //Makes our figther look straight at the enemy when fighting it
+            if (timeSinceLastAttack > timeBetweenAttacks)
             {
                 // This will trigger the Hit() event.
-                GetComponent<Animator>().SetTrigger("attack");
+                TriggerAttack();
                 timeSinceLastAttack = 0;
             }
+        }
+
+        private void TriggerAttack()
+        {
+            GetComponent<Animator>().ResetTrigger("attack");
+            GetComponent<Animator>().SetTrigger("attack");
         }
 
         // Animation Event
         void Hit()
         {
-            Health healthComponent = target.GetComponent<Health>();
-            healthComponent.TakeDamage(weaponDamage);
+            if (target == null)
+            {
+                return;
+            }
+            //The damage we do to our target is equal to our weapon damage
+            target.TakeDamage(weaponDamage);
         }
 
         private bool GetIsInRange()
         {
-            return Vector3.Distance(transform.position, target.position) < weaponRange;
+            //We calculate the distance between our figther and target from the fighters and targets position and asks if we are in range of our target through weaponRange
+            return Vector3.Distance(transform.position, target.transform.position) < weaponRange;
+        }
+
+        public bool CanAttack(CombatTarget combatTarget)
+        {
+            if (combatTarget == null)
+            {
+                return false;
+            }
+            Health targetToTest = combatTarget.GetComponent<Health>(); //Gets health from our combatTarget
+            return targetToTest != null && !targetToTest.IsDead(); //Checks if our target is not null and is not dead
         }
 
         public void Attack(CombatTarget combatTarget)
         {
+            //We use our StartAction from our ActionScheduler, which is used to say if we cancel or start an action
             GetComponent<ActionScheduler>().StartAction(this);
-            target = combatTarget.transform;
+            //Sees the health of our combatTarget
+            target = combatTarget.GetComponent<Health>();
         }
 
         public void Cancel()
         {
+            //We use our stopAttack trigger from our Animator
+            StopAttack();
+            //Then puts our target to null
             target = null;
+        }
+
+        private void StopAttack()
+        {
+            GetComponent<Animator>().SetTrigger("stopAttack");
+            GetComponent<Animator>().ResetTrigger("stopAttack");
         }
     }
 }
