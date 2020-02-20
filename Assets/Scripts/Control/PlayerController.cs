@@ -36,7 +36,7 @@ namespace RPG.Control
                     continue; //continues within our foreach loop
                 }
 
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButton(0))
                 {
                     GetComponent<Fighter>().Attack(target.gameObject);  //attack if in range
                 }
