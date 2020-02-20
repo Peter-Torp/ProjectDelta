@@ -1,6 +1,7 @@
 using UnityEngine;
 using RPG.Combat;
 using RPG.Core;
+using RPG.Movement;
 
 namespace RPG.Control
 {
@@ -12,16 +13,24 @@ namespace RPG.Control
         */
 
         [SerializeField] float chaseDistance = 5f;  //distance in which they attack
+        [SerializeField] float suspicionTime = 3f; // 3 seconds wait time until guards goes back to position
 
         Fighter fighter;
         Health health;
         GameObject player;
+        Mover mover;
+
+        Vector3 guardPosition;
+        float timeSinceLastSawPlayer = Mathf.Infinity;
 
         private void Start() 
         {
             fighter = GetComponent<Fighter>();  
-            health = GetComponent<Health>(); 
+            health = GetComponent<Health>();
+            mover = GetComponent<Mover>();
             player = GameObject.FindWithTag("Player"); //the tag of the player
+
+            guardPosition = transform.position;
         }
 
         /*Check if player is in distance. If so attack*/
@@ -29,13 +38,37 @@ namespace RPG.Control
         {
 
             if(InAttackRangeOfPlayer() && fighter.CanAttack(player))
-            { 
-                fighter.Attack(player);
-            }
-            else 
             {
-                fighter.Cancel(); //cancel chase 
+                timeSinceLastSawPlayer = 0;
+                AttackBehaviour();
             }
+            else if (timeSinceLastSawPlayer < suspicionTime)
+            {
+                SuspicionBehaviour();
+
+            }
+            else
+            {
+                //fighter.Cancel(); //cancel chase 
+                GuardBehaviour(); // Returns a guard to his starting location
+            }
+
+            timeSinceLastSawPlayer += Time.deltaTime;
+        }
+
+        private void GuardBehaviour()
+        {
+            mover.StartMoveAction(guardPosition);
+        }
+
+        private void SuspicionBehaviour()
+        {
+            GetComponent<ActionScheduler>().CancelCurrentAction();
+        }
+
+        private void AttackBehaviour()
+        {
+            fighter.Attack(player);
         }
 
         /*Calculate distance from AI position and player position*/
