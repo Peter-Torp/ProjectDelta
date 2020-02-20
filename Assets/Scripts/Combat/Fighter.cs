@@ -17,7 +17,7 @@ namespace RPG.Combat
         //Update is ran on every frame
         private void Update()
         {
-            timeSinceLastAttack += Time.deltaTime;
+            timeSinceLastAttack += Time.deltaTime;  //make sure we can attack as soon the game starts
 
             if (target == null) return;
             if (target.IsDead()) return;

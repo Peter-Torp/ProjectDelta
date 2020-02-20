@@ -1,5 +1,6 @@
 using UnityEngine;
 using RPG.Combat;
+using RPG.Core;
 
 namespace RPG.Control
 {
@@ -13,17 +14,20 @@ namespace RPG.Control
         [SerializeField] float chaseDistance = 5f;  //distance in which they attack
 
         Fighter fighter;
+        Health health;
         GameObject player;
 
         private void Start() 
         {
-            fighter = GetComponent<Fighter>();   
+            fighter = GetComponent<Fighter>();  
+            health = GetComponent<Health>(); 
             player = GameObject.FindWithTag("Player"); //the tag of the player
         }
 
         /*Check if player is in distance. If so attack*/
         private void Update()
         {
+
             if(InAttackRangeOfPlayer() && fighter.CanAttack(player))
             { 
                 fighter.Attack(player);
@@ -41,7 +45,12 @@ namespace RPG.Control
            return distanceOfPlayer < chaseDistance; //return true if chasedistance is bigger than the distance to the player.
         }
 
-
+        //called by Unity. Character selected -> Show Gizmo
+        private void OnDrawGizmosSelected() 
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, chaseDistance);   //position of character + the chase distance
+        }
 
 
 

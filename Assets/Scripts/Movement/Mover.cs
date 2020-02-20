@@ -12,15 +12,18 @@ namespace RPG.Movement
 
         /*navmesh = where the character can go. Part of Unity AI*/
         NavMeshAgent navMeshAgent;
+        Health health;
 
         /*get the navmesh component*/
         private void Start() {
             navMeshAgent = GetComponent<NavMeshAgent>();
+            health = GetComponent<Health>();
         }
 
         /*update the mover every frame - method is called: UpdateAnimator()*/
         void Update()
         {
+            navMeshAgent.enabled = !health.IsDead();    //disable navmesh agent is player is dead
             UpdateAnimator();
         }
 
