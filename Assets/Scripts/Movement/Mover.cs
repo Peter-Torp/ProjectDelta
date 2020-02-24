@@ -9,6 +9,7 @@ namespace RPG.Movement
     public class Mover : MonoBehaviour, IAction
     {
         [SerializeField] Transform target;
+        [SerializeField] float maxSpeed = 6f;
 
         /*navmesh = where the character can go. Part of Unity AI*/
         NavMeshAgent navMeshAgent;
@@ -28,16 +29,17 @@ namespace RPG.Movement
         }
 
         /*ActionScheduler method call - dertermine action is active. Call moveTo method*/
-        public void StartMoveAction(Vector3 destination)
+        public void StartMoveAction(Vector3 destination, float speedFraction)
         {
             GetComponent<ActionScheduler>().StartAction(this);
-            MoveTo(destination);
+            MoveTo(destination, speedFraction);
         }
 
         /*navmesh is clicked and destination is saved.*/
-        public void MoveTo(Vector3 destination)
+        public void MoveTo(Vector3 destination, float speedFraction)
         {
             navMeshAgent.destination = destination;
+            navMeshAgent.speed = maxSpeed * Mathf.Clamp01(speedFraction);   //have to be between 0 and 1. 
             navMeshAgent.isStopped = false;
         }
 
