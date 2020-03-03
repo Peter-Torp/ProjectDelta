@@ -97,10 +97,10 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2
-    agentSlope: 45
-    agentClimb: 0.4
+    agentRadius: 0.1
+    agentHeight: 4
+    agentSlope: 40
+    agentClimb: 1
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 20
@@ -108,7 +108,7 @@ NavMeshSettings:
     cellSize: 0.17777
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    accuratePlacement: 1
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 95a8f44ef28997946a06a3ecc2264ab7, type: 2}
@@ -122,6 +122,10 @@ PrefabInstance:
     - target: {fileID: 130542, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_Name
       value: SM_Env_Bush_02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 130542, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 418456, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -198,6 +202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (243)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.464047
@@ -273,6 +281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_RoomTop_03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 128856, guid: 51aef4a8ca8fd3e44b697a916eb2325a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400706, guid: 51aef4a8ca8fd3e44b697a916eb2325a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.54742
@@ -303,7 +315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400706, guid: 51aef4a8ca8fd3e44b697a916eb2325a, type: 3}
       propertyPath: m_RootOrder
-      value: 316
+      value: 315
       objectReference: {fileID: 0}
     - target: {fileID: 400706, guid: 51aef4a8ca8fd3e44b697a916eb2325a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -339,6 +351,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (189)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -415,6 +431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (239)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.024136
@@ -490,6 +510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_02 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 130542, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 418456, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31.138716
@@ -552,6 +576,10 @@ PrefabInstance:
     - target: {fileID: 130566, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
       propertyPath: m_Name
       value: SM_Env_Bush_04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 130566, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434036, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
       propertyPath: m_LocalPosition.x
@@ -628,6 +656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.4128976
@@ -691,6 +723,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 130542, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 418456, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.403051
@@ -753,6 +789,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (166)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -829,6 +869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Hut_01
       objectReference: {fileID: 0}
+    - target: {fileID: 187846, guid: d1e13909567fcd341bfe40fd2f12368e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 477682, guid: d1e13909567fcd341bfe40fd2f12368e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.242579
@@ -891,6 +935,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (231)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -967,6 +1015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (479)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.12934
@@ -1041,6 +1093,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (177)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1117,6 +1173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_02
       objectReference: {fileID: 0}
+    - target: {fileID: 143208, guid: b02bc145bce4ede4da8151c54b21e0e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471456, guid: b02bc145bce4ede4da8151c54b21e0e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.768173
@@ -1179,6 +1239,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (183)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1255,6 +1319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (268)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.712578
@@ -1329,6 +1397,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (245)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1474,6 +1546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (461)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.4874219
@@ -1549,6 +1625,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 130542, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 418456, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.549858
@@ -1611,6 +1691,10 @@ PrefabInstance:
     - target: {fileID: 108402, guid: c3dea81905538c54abf92c51fc0cee1a, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stall_Cover_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 108402, guid: c3dea81905538c54abf92c51fc0cee1a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 405880, guid: c3dea81905538c54abf92c51fc0cee1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1675,6 +1759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 130542, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 418456, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -27.829155
@@ -1738,6 +1826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Fence_01
       objectReference: {fileID: 0}
+    - target: {fileID: 171590, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 468672, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.282202
@@ -1800,6 +1892,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (449)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1876,6 +1972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (218)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -39.04518
@@ -1950,6 +2050,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (261)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2026,6 +2130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Hut_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 187846, guid: d1e13909567fcd341bfe40fd2f12368e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 477682, guid: d1e13909567fcd341bfe40fd2f12368e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.692577
@@ -2088,6 +2196,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (161)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2164,6 +2276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.36978
@@ -2238,6 +2354,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (168)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2314,6 +2434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (160)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.44096
@@ -2388,6 +2512,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2464,6 +2592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.392578
@@ -2530,6 +2662,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (232)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2606,6 +2742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (249)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.44751
@@ -2680,6 +2820,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (273)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2756,6 +2900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_04 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 130566, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434036, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.074292
@@ -2818,6 +2966,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (202)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2894,6 +3046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Castle_Wall_Gate_01
       objectReference: {fileID: 0}
+    - target: {fileID: 141314, guid: a342473935e669649a9be973cda516c1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 413294, guid: a342473935e669649a9be973cda516c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.765366
@@ -2969,6 +3125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.81258
@@ -3035,6 +3195,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (192)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3111,6 +3275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (471)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -47.979996
@@ -3185,6 +3353,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (186)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3261,6 +3433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 130566, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434036, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.257422
@@ -3335,6 +3511,10 @@ PrefabInstance:
     - target: {fileID: 175138, guid: 74e9944db636fe140830b274ae7d10bc, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_08 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 175138, guid: 74e9944db636fe140830b274ae7d10bc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 458748, guid: 74e9944db636fe140830b274ae7d10bc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3537,6 +3717,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (474)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -34.61144
@@ -3612,6 +3796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_Window_03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 188096, guid: 99b22ade5e5fef24b82c5cba6e333937, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 422898, guid: 99b22ade5e5fef24b82c5cba6e333937, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.117668
@@ -3642,7 +3830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 422898, guid: 99b22ade5e5fef24b82c5cba6e333937, type: 3}
       propertyPath: m_RootOrder
-      value: 318
+      value: 317
       objectReference: {fileID: 0}
     - target: {fileID: 422898, guid: 99b22ade5e5fef24b82c5cba6e333937, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3678,6 +3866,10 @@ PrefabInstance:
     - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_Name
       value: SM_Env_Hedge_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3741,6 +3933,10 @@ PrefabInstance:
     - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3817,6 +4013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Hut_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 187846, guid: d1e13909567fcd341bfe40fd2f12368e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 477682, guid: d1e13909567fcd341bfe40fd2f12368e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.2125783
@@ -3880,6 +4080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Fence_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 171590, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 468672, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.922579
@@ -3942,6 +4146,10 @@ PrefabInstance:
     - target: {fileID: 168022, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Window_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 168022, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 492156, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4018,6 +4226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 130542, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 418456, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.527422
@@ -4048,7 +4260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 418456, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_RootOrder
-      value: 319
+      value: 318
       objectReference: {fileID: 0}
     - target: {fileID: 418456, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4092,6 +4304,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (248)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4168,6 +4384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (266)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.587421
@@ -4243,6 +4463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.22742
@@ -4305,6 +4529,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (254)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4381,6 +4609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_Window_03
       objectReference: {fileID: 0}
+    - target: {fileID: 188096, guid: 99b22ade5e5fef24b82c5cba6e333937, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 422898, guid: 99b22ade5e5fef24b82c5cba6e333937, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.109325
@@ -4448,6 +4680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 143208, guid: b02bc145bce4ede4da8151c54b21e0e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471456, guid: b02bc145bce4ede4da8151c54b21e0e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.145098
@@ -4510,6 +4746,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (469)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4586,6 +4826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (195)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.352074
@@ -4660,6 +4904,10 @@ PrefabInstance:
     - target: {fileID: 185930, guid: cd2a633be52caff4ebfdacf2f48cc9be, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tree_012
+      objectReference: {fileID: 0}
+    - target: {fileID: 185930, guid: cd2a633be52caff4ebfdacf2f48cc9be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 498724, guid: cd2a633be52caff4ebfdacf2f48cc9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4787,6 +5035,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_04
       objectReference: {fileID: 0}
+    - target: {fileID: 130566, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434036, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31.347422
@@ -4861,6 +5113,10 @@ PrefabInstance:
     - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4992,6 +5248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrel_02
       objectReference: {fileID: 0}
+    - target: {fileID: 103760, guid: 4a6798a16f218f44e9d82cdb16502a98, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 425394, guid: 4a6798a16f218f44e9d82cdb16502a98, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.037422
@@ -5055,6 +5315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.4644513
@@ -5117,6 +5381,10 @@ PrefabInstance:
     - target: {fileID: 126736, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 126736, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 427386, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5193,6 +5461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.687422
@@ -5255,6 +5527,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5331,6 +5607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (451)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.812578
@@ -5406,6 +5686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Cart_02
       objectReference: {fileID: 0}
+    - target: {fileID: 148398, guid: f3fc066d1e9548f4d80eea3f373183de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 499194, guid: f3fc066d1e9548f4d80eea3f373183de, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.639
@@ -5468,6 +5752,10 @@ PrefabInstance:
     - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5532,6 +5820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Stall_02
       objectReference: {fileID: 0}
+    - target: {fileID: 116484, guid: f1f36d3398b878846b9b1b91bfd3e5e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 456058, guid: f1f36d3398b878846b9b1b91bfd3e5e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1666373
@@ -5594,6 +5886,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (240)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5670,6 +5966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (270)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.70258
@@ -5744,6 +6044,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (477)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5820,6 +6124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (259)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.757422
@@ -5894,6 +6202,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (443)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5970,6 +6282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (226)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -28.163403
@@ -6044,6 +6360,10 @@ PrefabInstance:
     - target: {fileID: 168022, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Window_04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168022, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 492156, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6120,6 +6440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (228)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -35.04518
@@ -6195,6 +6519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_Door_01
       objectReference: {fileID: 0}
+    - target: {fileID: 132052, guid: b4da227c9b849fe42ae5257c25064f33, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 426590, guid: b4da227c9b849fe42ae5257c25064f33, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.89742
@@ -6257,6 +6585,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (221)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6332,6 +6664,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (475)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6471,6 +6807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.5691953
@@ -6533,6 +6873,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (213)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6609,6 +6953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (276)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -51.68742
@@ -6683,6 +7031,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6759,6 +7111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Village_Top_01
       objectReference: {fileID: 0}
+    - target: {fileID: 126444, guid: f8ed91afdf7cecd47ba5102085b88cc0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 494586, guid: f8ed91afdf7cecd47ba5102085b88cc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.36258
@@ -6821,6 +7177,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (205)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6897,6 +7257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (170)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 43.91258
@@ -6972,6 +7336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (217)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.227423
@@ -7046,6 +7414,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7248,6 +7620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Basket_04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 125560, guid: 5489de3ba8de3204983754afa325efc5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 424638, guid: 5489de3ba8de3204983754afa325efc5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.444904
@@ -7300,6 +7676,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 636585809}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &638860210
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.152319
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.24951077
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.063538
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92878795
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.37061167
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 136.49301
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418213045117489655, guid: 97794e8f32d9d574c8ed85db378e8c47,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 97794e8f32d9d574c8ed85db378e8c47, type: 3}
 --- !u!1001 &656401802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7373,6 +7818,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (178)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7449,6 +7898,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (194)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.882622
@@ -7523,6 +7976,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (262)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7599,6 +8056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (223)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -35.24003
@@ -7674,6 +8135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 38.012577
@@ -7740,6 +8205,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (452)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7816,6 +8285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (459)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.84459
@@ -7890,6 +8363,10 @@ PrefabInstance:
     - target: {fileID: 113602, guid: 2b1cd4ec8dfee7041b5bc5767613d249, type: 3}
       propertyPath: m_Name
       value: SM_Env_RockPile_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 113602, guid: 2b1cd4ec8dfee7041b5bc5767613d249, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 415022, guid: 2b1cd4ec8dfee7041b5bc5767613d249, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7966,6 +8443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (222)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.987423
@@ -8041,6 +8522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (264)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.287422
@@ -8115,6 +8600,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (456)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8254,6 +8743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.582579
@@ -8320,6 +8813,10 @@ PrefabInstance:
     - target: {fileID: 126736, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_04 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 126736, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 427386, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8459,6 +8956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -28.427422
@@ -8522,6 +9023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_Window_04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 168022, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 492156, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.097422
@@ -8552,7 +9057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 492156, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
       propertyPath: m_RootOrder
-      value: 315
+      value: 314
       objectReference: {fileID: 0}
     - target: {fileID: 492156, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8659,6 +9164,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (230)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8797,6 +9306,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (167)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8953,6 +9466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (159)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.971508
@@ -9028,6 +9545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Village_01
       objectReference: {fileID: 0}
+    - target: {fileID: 192570, guid: ffac72511f45da24f8b43f004d2d48b2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 496238, guid: ffac72511f45da24f8b43f004d2d48b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.402578
@@ -9090,6 +9611,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (244)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9166,6 +9691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (164)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.781122
@@ -9241,6 +9770,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -56.958817
@@ -9315,6 +9848,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (190)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9517,6 +10054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.312578
@@ -9591,6 +10132,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (191)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9667,6 +10212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (242)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.106289
@@ -9741,6 +10290,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (204)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9817,6 +10370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (225)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.338078
@@ -9892,6 +10449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bridge_01
       objectReference: {fileID: 0}
+    - target: {fileID: 183838, guid: 53df91a386bb7b541a0c24d10af51a54, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 443662, guid: 53df91a386bb7b541a0c24d10af51a54, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.8274217
@@ -9954,6 +10515,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (251)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10030,6 +10595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.26742
@@ -10092,6 +10661,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (208)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10168,6 +10741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (163)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.782032
@@ -10243,6 +10820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 130542, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 418456, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.6205845
@@ -10305,6 +10886,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (197)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10381,6 +10966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (441)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.233473
@@ -10455,6 +11044,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (238)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10531,6 +11124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (215)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -28.187422
@@ -10606,6 +11203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Fence_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 171590, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 468672, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.439381
@@ -10668,6 +11269,10 @@ PrefabInstance:
     - target: {fileID: 126736, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_04 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 126736, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 427386, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10744,6 +11349,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (455)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.81
@@ -10818,6 +11427,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (180)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10957,6 +11570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_03
       objectReference: {fileID: 0}
+    - target: {fileID: 105966, guid: 09191fb08393ccf4291d1be49a262339, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 414844, guid: 09191fb08393ccf4291d1be49a262339, type: 3}
       propertyPath: m_LocalPosition.x
       value: -30.177422
@@ -11032,6 +11649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_Foundation_07
       objectReference: {fileID: 0}
+    - target: {fileID: 152466, guid: 46446b93c123716498506636ebe9ef68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 481464, guid: 46446b93c123716498506636ebe9ef68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.015331
@@ -11098,6 +11719,10 @@ PrefabInstance:
     - target: {fileID: 130542, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_Name
       value: SM_Env_Bush_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 130542, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 418456, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11174,6 +11799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (196)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.212769
@@ -11248,6 +11877,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (216)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11324,6 +11957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Corner_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 155188, guid: 277c7d167d4d0af4aac55cdde94e2ff6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 446320, guid: 277c7d167d4d0af4aac55cdde94e2ff6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.252579
@@ -11391,6 +12028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.707424
@@ -11453,6 +12094,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (237)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11529,6 +12174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.362578
@@ -11595,6 +12244,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (206)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11671,6 +12324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (480)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.036764
@@ -11746,6 +12403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_04
       objectReference: {fileID: 0}
+    - target: {fileID: 126736, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 427386, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
       propertyPath: m_LocalPosition.x
       value: -42.787422
@@ -11820,6 +12481,10 @@ PrefabInstance:
     - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11947,6 +12612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (169)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.051884
@@ -12021,6 +12690,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (470)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12097,6 +12770,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (247)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.4062886
@@ -12171,6 +12848,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (235)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12247,6 +12928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_04 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 126736, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 427386, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.212578
@@ -12322,6 +13007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Stall_04
       objectReference: {fileID: 0}
+    - target: {fileID: 117632, guid: 4afbbe7358b8769449ec9a275aeb7d4f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 436948, guid: 4afbbe7358b8769449ec9a275aeb7d4f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.862577
@@ -12384,6 +13073,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (472)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12523,6 +13216,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.712578
@@ -12597,6 +13294,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (233)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12673,6 +13374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (162)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.31258
@@ -12747,6 +13452,10 @@ PrefabInstance:
     - target: {fileID: 175138, guid: 74e9944db636fe140830b274ae7d10bc, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_08
+      objectReference: {fileID: 0}
+    - target: {fileID: 175138, guid: 74e9944db636fe140830b274ae7d10bc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 458748, guid: 74e9944db636fe140830b274ae7d10bc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12823,6 +13532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (458)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.6205373
@@ -12897,6 +13610,10 @@ PrefabInstance:
     - target: {fileID: 129324, guid: ab6ea215bbf83ba4b83fb52db15d1cc3, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Sack_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 129324, guid: ab6ea215bbf83ba4b83fb52db15d1cc3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 402012, guid: ab6ea215bbf83ba4b83fb52db15d1cc3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12973,6 +13690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (199)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.082622
@@ -13047,6 +13768,10 @@ PrefabInstance:
     - target: {fileID: 130566, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
       propertyPath: m_Name
       value: SM_Env_Bush_04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 130566, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434036, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13123,6 +13848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (209)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.1924548
@@ -13197,6 +13926,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (179)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13273,6 +14006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (457)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.02
@@ -13347,6 +14084,10 @@ PrefabInstance:
     - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13423,6 +14164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_04 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 130566, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434036, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.649576
@@ -13485,6 +14230,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (165)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13561,6 +14310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.697422
@@ -13627,6 +14380,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (172)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13841,6 +14598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Well_01
       objectReference: {fileID: 0}
+    - target: {fileID: 117314, guid: c3cca5509b7c2c34fa8af39b8533c9bb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 402088, guid: c3cca5509b7c2c34fa8af39b8533c9bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.7753763
@@ -13903,6 +14664,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (467)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13979,6 +14744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (227)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -35.18227
@@ -14054,6 +14823,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_Foundation_04
       objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 489602, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.96742
@@ -14120,6 +14893,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (193)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14196,6 +14973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (184)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.550613
@@ -14270,6 +15051,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (210)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14346,6 +15131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.020388
@@ -14408,6 +15197,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (212)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14484,6 +15277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.802578
@@ -14559,6 +15356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.437422
@@ -14621,6 +15422,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (182)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14697,6 +15502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (463)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.629341
@@ -14761,6 +15570,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1355703396}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1358012240
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1809409113054873146, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: m_Name
+      value: Follow Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -40.620296
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -33.267944
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.22616
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809409113054873541, guid: 0751578d2707bb94ebd1a943a302f77a,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1563498236}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0751578d2707bb94ebd1a943a302f77a, type: 3}
 --- !u!1001 &1362534465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14771,6 +15654,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (271)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14847,6 +15734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (252)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.529663
@@ -14921,6 +15812,10 @@ PrefabInstance:
     - target: {fileID: 104856, guid: 659ffda2fd4a2ee4cb3bc9ccc0f4c4af, type: 3}
       propertyPath: m_Name
       value: SM_Env_Road_Cross_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 104856, guid: 659ffda2fd4a2ee4cb3bc9ccc0f4c4af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 404400, guid: 659ffda2fd4a2ee4cb3bc9ccc0f4c4af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14997,6 +15892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31.857422
@@ -15059,6 +15958,10 @@ PrefabInstance:
     - target: {fileID: 130566, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
       propertyPath: m_Name
       value: SM_Env_Bush_04 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 130566, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434036, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15134,6 +16037,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (158)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15273,6 +16180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.548922
@@ -15348,6 +16259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_RoomTop_03
       objectReference: {fileID: 0}
+    - target: {fileID: 128856, guid: 51aef4a8ca8fd3e44b697a916eb2325a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400706, guid: 51aef4a8ca8fd3e44b697a916eb2325a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.54742
@@ -15415,6 +16330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_Foundation_04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 489602, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.04742
@@ -15445,7 +16364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 489602, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
       propertyPath: m_RootOrder
-      value: 312
+      value: 311
       objectReference: {fileID: 0}
     - target: {fileID: 489602, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15481,6 +16400,10 @@ PrefabInstance:
     - target: {fileID: 113602, guid: 2b1cd4ec8dfee7041b5bc5767613d249, type: 3}
       propertyPath: m_Name
       value: SM_Env_RockPile_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 113602, guid: 2b1cd4ec8dfee7041b5bc5767613d249, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 415022, guid: 2b1cd4ec8dfee7041b5bc5767613d249, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15557,6 +16480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (187)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.88057
@@ -15631,6 +16558,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (448)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15707,6 +16638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (444)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.60942
@@ -15781,6 +16716,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (176)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15857,6 +16796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 126736, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 427386, guid: ed9fd7e6c74a92f42b49e06cb75d2088, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.212578
@@ -15928,9 +16871,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2030298188}
     m_Modifications:
+    - target: {fileID: 133354, guid: 1c64fbe146825d4439e21d3a3c64b4fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 158026, guid: 1c64fbe146825d4439e21d3a3c64b4fb, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Chest_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 158026, guid: 1c64fbe146825d4439e21d3a3c64b4fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 473108, guid: 1c64fbe146825d4439e21d3a3c64b4fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15994,6 +16945,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (181)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16070,6 +17025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (454)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.4207273
@@ -16144,6 +17103,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16220,6 +17183,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (275)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.012577
@@ -16294,6 +17261,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (201)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16370,6 +17341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Basket_04
       objectReference: {fileID: 0}
+    - target: {fileID: 125560, guid: 5489de3ba8de3204983754afa325efc5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 424638, guid: 5489de3ba8de3204983754afa325efc5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.560722
@@ -16432,6 +17407,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (442)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16508,6 +17487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (234)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -44.300117
@@ -16582,6 +17565,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (171)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16658,6 +17645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 130542, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 418456, guid: 32e12bfff36b3254ab61e5799485ddf6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.712845
@@ -16721,6 +17712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.472578
@@ -16777,6 +17772,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1562054719}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1563498236 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9169026001514661365, guid: 00254deafec00df47a5cb22b82fa7df2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2020273805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1580695873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16787,6 +17788,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (473)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16863,6 +17868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (253)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.589373
@@ -16938,6 +17947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Fence_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 171590, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 468672, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.812578
@@ -17001,6 +18014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Fence_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 171590, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 468672, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.482578
@@ -17063,6 +18080,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (220)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17139,6 +18160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (462)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.4274219
@@ -17213,6 +18238,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (207)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17289,6 +18318,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (263)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.387423
@@ -17364,6 +18397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (258)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.0375562
@@ -17438,6 +18475,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (185)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17577,6 +18618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (465)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -49.585148
@@ -17715,6 +18760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (476)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.911438
@@ -17789,6 +18838,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (250)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17865,6 +18918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.267422
@@ -17927,6 +18984,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (445)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18003,6 +19064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (468)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -44.68742
@@ -18077,6 +19142,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (260)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18153,6 +19222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (267)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.41258
@@ -18228,6 +19301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_Foundation_04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 489602, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.107422
@@ -18298,6 +19375,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (236)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18374,6 +19455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Fence_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 171590, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 468672, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.002579
@@ -18437,6 +19522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.199375
@@ -18499,6 +19588,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (447)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18575,6 +19668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Corner_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 155188, guid: 277c7d167d4d0af4aac55cdde94e2ff6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 446320, guid: 277c7d167d4d0af4aac55cdde94e2ff6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.522577
@@ -18641,6 +19738,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (198)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18717,6 +19818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.682579
@@ -18791,6 +19896,10 @@ PrefabInstance:
     - target: {fileID: 120268, guid: 0eba33735703d6b49a1773d1396db4b8, type: 3}
       propertyPath: m_Name
       value: SM_Env_RockPile_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 120268, guid: 0eba33735703d6b49a1773d1396db4b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 464160, guid: 0eba33735703d6b49a1773d1396db4b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18867,6 +19976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (246)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.612578
@@ -18942,6 +20055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Fence_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 171590, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 468672, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.792578
@@ -19004,6 +20121,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (175)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19080,6 +20201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (274)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 46.81258
@@ -19154,6 +20279,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (174)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19230,6 +20359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (214)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.949465
@@ -19304,6 +20437,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (481)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19380,6 +20517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (466)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.492573
@@ -19454,6 +20595,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (257)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19593,6 +20738,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (229)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -41.90527
@@ -19668,6 +20817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Corner_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 155188, guid: 277c7d167d4d0af4aac55cdde94e2ff6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 446320, guid: 277c7d167d4d0af4aac55cdde94e2ff6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.0933735
@@ -19735,6 +20888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 31.802578
@@ -19801,6 +20958,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (219)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19877,6 +21038,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (188)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.130428
@@ -19951,6 +21116,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (255)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20027,6 +21196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.059738
@@ -20089,6 +21262,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (265)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20228,6 +21405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_RoadSign_01
       objectReference: {fileID: 0}
+    - target: {fileID: 125860, guid: cf6871bb3104ec44c9b52e64356323d6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 488274, guid: cf6871bb3104ec44c9b52e64356323d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.277422
@@ -20290,6 +21471,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (277)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20366,6 +21551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (200)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.552074
@@ -20440,6 +21629,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (446)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20516,6 +21709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.592578
@@ -20590,6 +21787,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (256)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20729,6 +21930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31.857422
@@ -20791,6 +21996,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (460)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20930,6 +22139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (203)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.512577
@@ -21005,6 +22218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Corner_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 155188, guid: 277c7d167d4d0af4aac55cdde94e2ff6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 446320, guid: 277c7d167d4d0af4aac55cdde94e2ff6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.972578
@@ -21071,6 +22288,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (211)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21147,6 +22368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_04 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 130566, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434036, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.240454
@@ -21209,6 +22434,10 @@ PrefabInstance:
     - target: {fileID: 141876, guid: 141aa4408d61bc244a29ea886cc08ae3, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Tower_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 141876, guid: 141aa4408d61bc244a29ea886cc08ae3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 499888, guid: 141aa4408d61bc244a29ea886cc08ae3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21273,6 +22502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_Foundation_04 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 489602, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.877422
@@ -21303,7 +22536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 489602, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
       propertyPath: m_RootOrder
-      value: 313
+      value: 312
       objectReference: {fileID: 0}
     - target: {fileID: 489602, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -21343,6 +22576,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21418,6 +22655,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (478)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21557,6 +22798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Straight_01 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 123434, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 497450, guid: c87a99b4c24b9ce48bac40727eb1ecb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.785772
@@ -21627,6 +22872,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (450)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21703,6 +22952,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (272)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.61258
@@ -21778,6 +23031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_Foundation_04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 489602, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.087421
@@ -21849,6 +23106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Wall_01
       objectReference: {fileID: 0}
+    - target: {fileID: 113512, guid: 76d0990ce6d878544bdb1bc9f388dbce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 448950, guid: 76d0990ce6d878544bdb1bc9f388dbce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.722578
@@ -21901,6 +23162,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2020093694}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2020273805
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4902660786131331472, guid: 00254deafec00df47a5cb22b82fa7df2,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169026001514661365, guid: 00254deafec00df47a5cb22b82fa7df2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.607021
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169026001514661365, guid: 00254deafec00df47a5cb22b82fa7df2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2245921
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169026001514661365, guid: 00254deafec00df47a5cb22b82fa7df2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.181197
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169026001514661365, guid: 00254deafec00df47a5cb22b82fa7df2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169026001514661365, guid: 00254deafec00df47a5cb22b82fa7df2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169026001514661365, guid: 00254deafec00df47a5cb22b82fa7df2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169026001514661365, guid: 00254deafec00df47a5cb22b82fa7df2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169026001514661365, guid: 00254deafec00df47a5cb22b82fa7df2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169026001514661365, guid: 00254deafec00df47a5cb22b82fa7df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169026001514661365, guid: 00254deafec00df47a5cb22b82fa7df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169026001514661365, guid: 00254deafec00df47a5cb22b82fa7df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 00254deafec00df47a5cb22b82fa7df2, type: 3}
 --- !u!1 &2030298187
 GameObject:
   m_ObjectHideFlags: 0
@@ -22239,7 +23569,6 @@ Transform:
   - {fileID: 1050357788}
   - {fileID: 1734716529}
   - {fileID: 1324502462}
-  - {fileID: 1809409111865041606}
   - {fileID: 1419986933}
   - {fileID: 1947873322}
   - {fileID: 2042986027}
@@ -22249,7 +23578,7 @@ Transform:
   - {fileID: 337767574}
   - {fileID: 365917178}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2042986026
 PrefabInstance:
@@ -22261,6 +23590,10 @@ PrefabInstance:
     - target: {fileID: 168022, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Window_04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168022, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 492156, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22292,7 +23625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 492156, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
       propertyPath: m_RootOrder
-      value: 314
+      value: 313
       objectReference: {fileID: 0}
     - target: {fileID: 492156, guid: 091ea372da794714aacb7b7a6fbd5f58, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22336,6 +23669,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (241)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22412,6 +23749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (173)
       objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.39861
@@ -22487,6 +23828,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_Corner_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 155188, guid: 277c7d167d4d0af4aac55cdde94e2ff6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 446320, guid: 277c7d167d4d0af4aac55cdde94e2ff6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.4525795
@@ -22553,6 +23898,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (224)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22629,6 +23978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_House_RoomTop_03 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 128856, guid: 51aef4a8ca8fd3e44b697a916eb2325a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400706, guid: 51aef4a8ca8fd3e44b697a916eb2325a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.54742
@@ -22659,7 +24012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400706, guid: 51aef4a8ca8fd3e44b697a916eb2325a, type: 3}
       propertyPath: m_RootOrder
-      value: 317
+      value: 316
       objectReference: {fileID: 0}
     - target: {fileID: 400706, guid: 51aef4a8ca8fd3e44b697a916eb2325a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22771,6 +24124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Hedge_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 160244, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 480300, guid: 8f82ce8acb15bb14f9ede7ed4c75be24, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.287422
@@ -22834,6 +24191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Bush_04 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 130566, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434036, guid: ef6ea52561f2ccd4cbc5b746b20c8892, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.8353148
@@ -22896,6 +24257,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (269)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22971,6 +24336,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (464)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23110,6 +24479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Hut_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 187846, guid: d1e13909567fcd341bfe40fd2f12368e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 477682, guid: d1e13909567fcd341bfe40fd2f12368e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.192578
@@ -23172,6 +24545,10 @@ PrefabInstance:
     - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_Name
       value: SM_Env_GroundMounds_05 (453)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152366, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 494994, guid: f99148c9e30e6b746abc98c86fb60e5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23237,285 +24614,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2138100252}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &307887743091653811
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8756659696254312052}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.88, y: -0.32, z: -0.15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2512983473837076529}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &613376131202325124
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2512983473837076529}
-  - component: {fileID: 2517596982551398696}
-  m_Layer: 0
-  m_Name: Patrol Path
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1641055484008010413
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4184953569019669948}
-  m_Layer: 0
-  m_Name: Waypoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1001 &1809409111865041605
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2030298188}
-    m_Modifications:
-    - target: {fileID: 1809409112196008084, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.26039156
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409112196008084, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.6714176
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409112196008084, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.2743587
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409112196008084, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.637277
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409112196008084, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409112196008084, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409112196008084, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873146, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_Name
-      value: Follow Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.5874219
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.7033787
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 11.397337
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 311
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809409113054873541, guid: 0751578d2707bb94ebd1a943a302f77a,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0751578d2707bb94ebd1a943a302f77a, type: 3}
---- !u!4 &1809409111865041606 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1809409113054873540, guid: 0751578d2707bb94ebd1a943a302f77a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1809409111865041605}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2512983473837076529
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613376131202325124}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7, y: 1.15, z: 4.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 8361429032044555876}
-  - {fileID: 7184857846582582835}
-  - {fileID: 307887743091653811}
-  - {fileID: 4184953569019669948}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2517596982551398696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613376131202325124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 001ee1f72a569014794bed66c13897fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &4117575638519011947
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8361429032044555876}
-  m_Layer: 0
-  m_Name: Waypoint (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4184953569019669948
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641055484008010413}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.75, y: -0.32, z: -9.91}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2512983473837076529}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &7184857846582582835
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7237098675370301257}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.4, y: -0.32, z: 5.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2512983473837076529}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7237098675370301257
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7184857846582582835}
-  m_Layer: 0
-  m_Name: Waypoint (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8361429032044555876
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4117575638519011947}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.06, y: -0.32, z: -14.22}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2512983473837076529}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8756659696254312052
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 307887743091653811}
-  m_Layer: 0
-  m_Name: Waypoint (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
