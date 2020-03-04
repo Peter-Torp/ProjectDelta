@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Dungeon_SnowRegion.unity
+    guid: e28db2fb7e325314b9e24d870368071e
+  - enabled: 1
+    path: Assets/Scenes/Grass.unity
+    guid: bf85c43c4ac784c4bb87a56a466e81d1
+  - enabled: 1
+    path: Assets/Scenes/SnowRegion.unity
+    guid: 096a3d929cb37c646999c440517615c9
+  - enabled: 1
+    path: Assets/Scenes/StarterTown.unity
+    guid: 9cb5ecae56e69f04589439155d8a1e1a
   m_configObjects: {}
