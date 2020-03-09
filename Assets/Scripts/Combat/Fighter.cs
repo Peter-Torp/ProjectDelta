@@ -7,12 +7,9 @@ namespace RPG.Combat
 {
     public class Fighter : MonoBehaviour, IAction
     {
-        [SerializeField] float weaponRange = 2f; //Our WeaponRange
         [SerializeField] float timeBetweenAttacks = 1f; //Time between our fighters attacks
-        [SerializeField] float weaponDamage = 5f; //Our damage the weapon does
-        [SerializeField] GameObject weaponPrefab = null;
         [SerializeField] Transform handTransform = null;
-        [SerializeField] AnimatorOverrideController weaponOverride = null;
+        [SerializeField] Weapon weapon = null;  //which weapon?
 
 
         Health target;   //We get access to anything we've put in Health, we do this because we know ALL enemies has health
@@ -45,9 +42,9 @@ namespace RPG.Combat
 
         private void SpawnWeapon()
         {
-            Instantiate(weaponPrefab, handTransform);
+            if(weapon == null) return;
             Animator animator = GetComponent<Animator>();
-            animator.runtimeAnimatorController = weaponOverride;
+            weapon.Spawn(handTransform, animator);
         }
 
         private void AttackBehaviour()
@@ -76,13 +73,13 @@ namespace RPG.Combat
                 return;
             }
             //The damage we do to our target is equal to our weapon damage
-            target.TakeDamage(weaponDamage);
+            target.TakeDamage(weapon.GetDamage());
         }
 
         private bool GetIsInRange()
         {
             //We calculate the distance between our figther and target from the fighters and targets position and asks if we are in range of our target through weaponRange
-            return Vector3.Distance(transform.position, target.transform.position) < weaponRange;
+            return Vector3.Distance(transform.position, target.transform.position) < weapon.GetWeaponRange();
         }
 
         public bool CanAttack(GameObject combatTarget)
