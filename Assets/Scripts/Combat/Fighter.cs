@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using RPG.Movement;
 using RPG.Core;
+using System;
 
 namespace RPG.Combat
 {
@@ -9,10 +10,19 @@ namespace RPG.Combat
         [SerializeField] float weaponRange = 2f; //Our WeaponRange
         [SerializeField] float timeBetweenAttacks = 1f; //Time between our fighters attacks
         [SerializeField] float weaponDamage = 5f; //Our damage the weapon does
+        [SerializeField] GameObject weaponPrefab = null;
+        [SerializeField] Transform handTransform = null;
+        [SerializeField] AnimatorOverrideController weaponOverride = null;
+
 
         Health target;   //We get access to anything we've put in Health, we do this because we know ALL enemies has health
 
         float timeSinceLastAttack = Mathf.Infinity; //last attack happened a long time ago
+
+        private void Start()
+        {
+            SpawnWeapon();
+        }
 
         //Update is ran on every frame
         private void Update()
@@ -31,6 +41,13 @@ namespace RPG.Combat
                 GetComponent<Mover>().Cancel();
                 AttackBehaviour();
             }
+        }
+
+        private void SpawnWeapon()
+        {
+            Instantiate(weaponPrefab, handTransform);
+            Animator animator = GetComponent<Animator>();
+            animator.runtimeAnimatorController = weaponOverride;
         }
 
         private void AttackBehaviour()
