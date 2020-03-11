@@ -16,14 +16,19 @@ public class Weapon : ScriptableObject
     [SerializeField] GameObject equippedPrefab = null;
     [SerializeField] float weaponDamage = 5f; //Our damage the weapon does
     [SerializeField] float weaponRange = 2f; //Our WeaponRange
+    [SerializeField] bool isRightHanded = true;
 
 
-    public void Spawn(Transform handTransform, Animator animator)
+    public void Spawn(Transform rightHand, Transform leftHand, Animator animator)
     {
         if(equippedPrefab != null)
         {
-        Instantiate(equippedPrefab, handTransform);
-        animator.runtimeAnimatorController = animatorOverride;
+                Transform handTransform;
+                if (isRightHanded) handTransform = rightHand;
+                else handTransform = leftHand;
+                
+                Instantiate(equippedPrefab, handTransform);
+                animator.runtimeAnimatorController = animatorOverride;
         }
         if(animatorOverride != null)
         {
