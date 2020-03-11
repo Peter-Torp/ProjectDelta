@@ -9,16 +9,17 @@ namespace RPG.Combat
     {
         [SerializeField] float timeBetweenAttacks = 1f; //Time between our fighters attacks
         [SerializeField] Transform handTransform = null;
-        [SerializeField] Weapon weapon = null;  //which weapon?
+        [SerializeField] Weapon defaultWeapon = null;  //which weapon?
 
 
         Health target;   //We get access to anything we've put in Health, we do this because we know ALL enemies has health
 
         float timeSinceLastAttack = Mathf.Infinity; //last attack happened a long time ago
+        Weapon currentWeapon = null;
 
         private void Start()
         {
-            SpawnWeapon();
+            EquipWeapon(defaultWeapon);
         }
 
         //Update is ran on every frame
@@ -40,9 +41,9 @@ namespace RPG.Combat
             }
         }
 
-        private void SpawnWeapon()
+        public void EquipWeapon(Weapon weapon)
         {
-            if(weapon == null) return;
+            currentWeapon = weapon;
             Animator animator = GetComponent<Animator>();
             weapon.Spawn(handTransform, animator);
         }
@@ -73,13 +74,13 @@ namespace RPG.Combat
                 return;
             }
             //The damage we do to our target is equal to our weapon damage
-            target.TakeDamage(weapon.GetDamage());
+            target.TakeDamage(currentWeapon.GetDamage());
         }
 
         private bool GetIsInRange()
         {
             //We calculate the distance between our figther and target from the fighters and targets position and asks if we are in range of our target through weaponRange
-            return Vector3.Distance(transform.position, target.transform.position) < weapon.GetWeaponRange();
+            return Vector3.Distance(transform.position, target.transform.position) < currentWeapon.GetWeaponRange();
         }
 
         public bool CanAttack(GameObject combatTarget)
