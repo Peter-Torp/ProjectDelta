@@ -74,8 +74,21 @@ namespace RPG.Combat
             {
                 return;
             }
-            //The damage we do to our target is equal to our weapon damage
-            target.TakeDamage(currentWeapon.GetDamage());
+
+            if (currentWeapon.HasProjectile())
+            {
+                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target);
+            }
+            else
+            {
+                //The damage we do to our target is equal to our weapon damage
+                target.TakeDamage(currentWeapon.GetDamage());
+            }
+        }
+
+        void Shoot()
+        {
+            Hit();
         }
 
         private bool GetIsInRange()

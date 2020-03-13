@@ -1,3 +1,4 @@
+using RPG.Core;
 using UnityEngine;
 
 namespace RPG.Combat 
@@ -17,24 +18,44 @@ public class Weapon : ScriptableObject
     [SerializeField] float weaponDamage = 5f; //Our damage the weapon does
     [SerializeField] float weaponRange = 2f; //Our WeaponRange
     [SerializeField] bool isRightHanded = true;
+        [SerializeField] Projectile projectile = null;
 
 
     public void Spawn(Transform rightHand, Transform leftHand, Animator animator)
     {
         if(equippedPrefab != null)
-        {
-                Transform handTransform;
-                if (isRightHanded) handTransform = rightHand;
-                else handTransform = leftHand;
-                
+            {
+                Transform handTransform = GetTransorm(rightHand, leftHand);
+
                 Instantiate(equippedPrefab, handTransform);
                 animator.runtimeAnimatorController = animatorOverride;
-        }
-        if(animatorOverride != null)
+            }
+            if (animatorOverride != null)
         {
             animator.runtimeAnimatorController = animatorOverride;
         }
     }
+
+        private Transform GetTransorm(Transform rightHand, Transform leftHand)
+        {
+            Transform handTransform;
+            if (isRightHanded) handTransform = rightHand;
+            else handTransform = leftHand;
+            return handTransform;
+        }
+
+        public bool HasProjectile()
+        {
+            return projectile != null;
+        }
+
+        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target)
+        {
+            Projectile projectileInstance = Instantiate(projectile,
+                GetTransorm(rightHand, leftHand).position,
+                Quaternion.identity);
+            projectileInstance.SetTarget(target, weaponDamage);
+        }
 
     public float GetDamage()
     {
