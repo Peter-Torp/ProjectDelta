@@ -1,3 +1,4 @@
+using System;
 using RPG.Core;
 using UnityEngine;
 
@@ -18,11 +19,15 @@ public class Weapon : ScriptableObject
     [SerializeField] float weaponDamage = 5f; //Our damage the weapon does
     [SerializeField] float weaponRange = 2f; //Our WeaponRange
     [SerializeField] bool isRightHanded = true;
-        [SerializeField] Projectile projectile = null;
+    [SerializeField] Projectile projectile = null;
+
+    const string weaponName = "Weapon";
 
 
-    public void Spawn(Transform rightHand, Transform leftHand, Animator animator)
+    public void Spawn(Transform rightHand, Transform leftHand, Animator animator)   
     {
+        DestroyOldWeapon(rightHand, leftHand); 
+
         if(equippedPrefab != null)
             {
                 Transform handTransform = GetTransorm(rightHand, leftHand);
@@ -35,6 +40,24 @@ public class Weapon : ScriptableObject
             animator.runtimeAnimatorController = animatorOverride;
         }
     }
+
+        /*Check wether a player carries a weapon. If yes destroy the current weapon when picking up a new weapon*/
+        private void DestroyOldWeapon(Transform rightHand, Transform leftHand)
+        {
+            Transform currentWeapon = rightHand.Find(weaponName);
+            if(currentWeapon == null)
+            {
+                currentWeapon = leftHand.Find(weaponName);
+            } 
+            if(currentWeapon == null)
+            {
+                return;
+            }
+
+            currentWeapon.name = "Destroyed";   //no confusion of the destroyed and the pickupped weapon 
+            Destroy(currentWeapon.gameObject);
+
+        }
 
         private Transform GetTransorm(Transform rightHand, Transform leftHand)
         {
