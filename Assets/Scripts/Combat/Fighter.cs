@@ -2,16 +2,16 @@
 using RPG.Movement;
 using RPG.Core;
 using System;
+using RPG.Saving;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction
+    public class Fighter : MonoBehaviour, IAction, ISaveable
     {
         [SerializeField] float timeBetweenAttacks = 1f; //Time between our fighters attacks
         [SerializeField] Transform rightHandTransform = null;
         [SerializeField] Transform leftHandTransform = null;
         [SerializeField] Weapon defaultWeapon = null;  //which weapon?
-        [SerializeField] string defaultWeaponName = "Unarmed"; //scriptable object 
 
         Health target;   //We get access to anything we've put in Health, we do this because we know ALL enemies has health
 
@@ -20,9 +20,11 @@ namespace RPG.Combat
 
         private void Start()
         {   
-            //look for a resource with this type
-            Weapon weapon = Resources.Load<Weapon>(defaultWeaponName); 
-            EquipWeapon(weapon);
+            if (currentWeapon == null)
+            {
+                //look for a resource with this type
+                EquipWeapon(defaultWeapon);
+            }
         }
 
         //Update is ran on every frame
@@ -132,6 +134,19 @@ namespace RPG.Combat
         {
             GetComponent<Animator>().SetTrigger("stopAttack");
             GetComponent<Animator>().ResetTrigger("stopAttack");
+        }
+
+        public object CaptureState()
+        {
+            return currentWeapon.name;
+        }
+
+        public void RestoreState(object state)
+        {
+            string weaponName = (string)state;
+            Weapon weapon = Resources.Load<Weapon>(weaponName);
+            EquipWeapon(weapon);
+
         }
     }
 }
