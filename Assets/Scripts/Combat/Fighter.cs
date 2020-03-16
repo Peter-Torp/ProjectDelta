@@ -11,7 +11,7 @@ namespace RPG.Combat
         [SerializeField] Transform rightHandTransform = null;
         [SerializeField] Transform leftHandTransform = null;
         [SerializeField] Weapon defaultWeapon = null;  //which weapon?
-
+        [SerializeField] string defaultWeaponName = "Unarmed"; //scriptable object 
 
         Health target;   //We get access to anything we've put in Health, we do this because we know ALL enemies has health
 
@@ -19,8 +19,10 @@ namespace RPG.Combat
         Weapon currentWeapon = null;
 
         private void Start()
-        {
-            EquipWeapon(defaultWeapon);
+        {   
+            //look for a resource with this type
+            Weapon weapon = Resources.Load<Weapon>(defaultWeaponName); 
+            EquipWeapon(weapon);
         }
 
         //Update is ran on every frame

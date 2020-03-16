@@ -35,10 +35,19 @@ public class Weapon : ScriptableObject
                 Instantiate(equippedPrefab, handTransform);
                 animator.runtimeAnimatorController = animatorOverride;
             }
+
+            var overrideController = animator.runtimeAnimatorController as AnimatorOverrideController;
+
             if (animatorOverride != null)
-        {
-            animator.runtimeAnimatorController = animatorOverride;
-        }
+            {
+                animator.runtimeAnimatorController = animatorOverride;
+            }
+            //reset the override controller correctly
+            else if(overrideController != null)
+            {
+                animator.runtimeAnimatorController = overrideController.runtimeAnimatorController;
+            }
+            
     }
 
         /*Check wether a player carries a weapon. If yes destroy the current weapon when picking up a new weapon*/

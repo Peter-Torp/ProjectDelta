@@ -31,6 +31,7 @@ Transform:
   m_Children:
   - {fileID: 4912666325718815760}
   - {fileID: 5259961811627018730}
+  - {fileID: 5386365885714843089}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -50,6 +51,11 @@ MonoBehaviour:
   isHoming: 0
   hitEffect: {fileID: 4419258069923624948, guid: b6337aebb27756d4eb0f3849f7544b6d,
     type: 3}
+  maxLifeTime: 5
+  destoyOnHit:
+  - {fileID: 5900970746194487812}
+  - {fileID: 8146926386410000516}
+  lifeAfterImpact: 2
 --- !u!65 &1258677676955831064
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -91,8 +97,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.01}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_Children:
-  - {fileID: 5386365885714843089}
+  m_Children: []
   m_Father: {fileID: 4806051750661763704}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -4928,23 +4933,23 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 0.627451}
-      key2: {r: 0, g: 0, b: 0, a: 0}
+      key0: {r: 0, g: 0.33982182, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 24865
+      ctime0: 59560
       ctime1: 65535
-      ctime2: 0
+      ctime2: 20046
       ctime3: 0
       ctime4: 0
       ctime5: 0
       ctime6: 0
       ctime7: 0
-      atime0: 0
+      atime0: 15420
       atime1: 65535
       atime2: 0
       atime3: 0
@@ -4990,11 +4995,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8205075763416221498}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.02}
-  m_LocalScale: {x: 0.023779592, y: 0.023779592, z: 0.023779592}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.011889796, y: 0.011889796, z: 0.011889796}
   m_Children: []
-  m_Father: {fileID: 4912666325718815760}
-  m_RootOrder: 0
+  m_Father: {fileID: 4806051750661763704}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!198 &2542959306536863168
 ParticleSystem:

@@ -1,0 +1,10 @@
+# Resource folders have to be unique. 
+
+# Scriptable objects holds information about a gameobject
+
+# Free assets: 
+- Animations (player/enemy)
+- Fireball tail. 
+- Shotgun burst
+
+
