@@ -1,10 +1,21 @@
 # Resource folders have to be unique. 
 
 # Scriptable objects holds information about a gameobject
+- Cannot be used as a Monobehavior script 
+- Hook up with a component
+- Good for non-changing behavior 
 
 # Free assets: 
 - Animations (player/enemy)
 - Fireball tail. 
 - Shotgun burst
+
+# Classes = enums
+# Lvl: [Range]
+# Character = Basestats. 
+
+# Health (From)-> BaseStats (From)-> Progression
+
+
 
 

@@ -1,13 +1,21 @@
 using UnityEngine;
 using RPG.Saving;
+using RPG.Stats;
+using RPG.Core;
 
-namespace RPG.Core
+namespace RPG.Resources
 {
     public class Health : MonoBehaviour, ISaveable
     {
         [SerializeField] float healthPoints = 100f; //Sets our Hp to 100
 
         bool isDead = false;
+
+        //bug = enemy is reset sometimes + circular dependency
+        private void Start() 
+        { 
+             healthPoints = GetComponent<BaseStats>().GetHealth();   
+        }
 
         //Checks if our target or figther is dead or not
         public bool IsDead()
