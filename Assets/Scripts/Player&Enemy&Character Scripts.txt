@@ -1,0 +1,31 @@
+------------------------------------------Scripts---------------------------------------------
+
+#Enemy: 
+- Mover
+- Fighter
+- ActionScheduler
+- Saveable Entity
+- Base Stats
+- AI controller
+- Combat Target
+- 
+
+#Player: 
+- Mover 
+- Fighter
+- ActionScheduler
+- Saveable Entity
+- Base Stats 
+- Player controller
+- 
+
+#Character: 
+- Mover
+- Fighter
+- ActionScheduler
+- Saveable Entity
+- Base Stats  
+- Character
+
+
+------------------------------------------------------------------------------------
