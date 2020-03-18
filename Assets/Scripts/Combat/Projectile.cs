@@ -13,6 +13,7 @@ namespace RPG.Combat
     [SerializeField] GameObject[] destoyOnHit = null;
     [SerializeField] float lifeAfterImpact = 2; //maybe some special effect
     Health target = null;
+        GameObject instigator = null;
     float damage = 0;
 
     private void Start() 
@@ -32,10 +33,11 @@ namespace RPG.Combat
         transform.Translate(Vector3.forward * speed * Time.deltaTime); //to move to our target
     }
 
-    public void SetTarget(Health target, float damage)
+    public void SetTarget(Health target, GameObject instigator, float damage)
     {
         this.target = target;
         this.damage = damage;
+            this.instigator = instigator;
 
         //stop moving on forever
         Destroy(gameObject, maxLifeTime);
@@ -55,7 +57,7 @@ namespace RPG.Combat
     {
         if (other.GetComponent<Health>() != target) return;
         if(target.IsDead()) return; //continue projectile path if target is dead
-        target.TakeDamage(damage);
+        target.TakeDamage(instigator, damage);
 
         //prop
         speed = 0;

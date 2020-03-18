@@ -54,6 +54,11 @@ namespace RPG.Combat
             weapon.Spawn(rightHandTransform, leftHandTransform, animator);
         }
 
+        public Health GetTarget() //Just finds out target so we can display our enemies health display
+        {
+            return target;
+        }
+
         private void AttackBehaviour()
         {
             transform.LookAt(target.transform); //Makes our figther look straight at the enemy when fighting it
@@ -82,12 +87,12 @@ namespace RPG.Combat
 
             if (currentWeapon.HasProjectile())
             {
-                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target);
+                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject);
             }
             else
             {
                 //The damage we do to our target is equal to our weapon damage
-                target.TakeDamage(currentWeapon.GetDamage());
+                target.TakeDamage(gameObject, currentWeapon.GetDamage());
             }
         }
 

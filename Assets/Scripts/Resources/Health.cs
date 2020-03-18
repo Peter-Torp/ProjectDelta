@@ -2,6 +2,7 @@ using UnityEngine;
 using RPG.Saving;
 using RPG.Stats;
 using RPG.Core;
+using System;
 
 namespace RPG.Resources
 {
@@ -24,7 +25,7 @@ namespace RPG.Resources
         }
 
 
-        public void TakeDamage(float damage)
+        public void TakeDamage(GameObject instigator, float damage)
         {
             //Calculates the damage we take and makes it stop at 0 so it doesnt drop in minus hp
             healthPoints = Mathf.Max(healthPoints - damage, 0);
@@ -32,8 +33,17 @@ namespace RPG.Resources
             if (healthPoints == 0)
             {
                 Die();
+                AwardExperience(instigator);
             }
 
+        }
+
+
+
+        public float GetPercentage()
+        {
+            //Here we do the calculation of our percentage health
+            return 100 * (healthPoints / GetComponent<BaseStats>().GetHealth());
         }
 
         public void Die()
@@ -46,6 +56,13 @@ namespace RPG.Resources
             GetComponent<ActionScheduler>().CancelCurrentAction();  //cancel action when dead
         }
 
+        private void AwardExperience(GameObject instigator)
+        {
+            Experience experience = instigator.GetComponent<Experience>(); //Storing the experience
+            if (experience == null) return; // if its null just return
+
+            experience.GainExperience(GetComponent<BaseStats>().GetExperienceReward()); //Otherwise we gain experience points
+        }
 
         //Save-----------------------------------------------------
 
