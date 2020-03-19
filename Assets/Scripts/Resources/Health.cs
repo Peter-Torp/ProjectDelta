@@ -15,7 +15,7 @@ namespace RPG.Resources
         //bug = enemy is reset sometimes + circular dependency
         private void Start() 
         { 
-             healthPoints = GetComponent<BaseStats>().GetHealth();   
+             healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health);   
         }
 
         //Checks if our target or figther is dead or not
@@ -43,7 +43,7 @@ namespace RPG.Resources
         public float GetPercentage()
         {
             //Here we do the calculation of our percentage health
-            return 100 * (healthPoints / GetComponent<BaseStats>().GetHealth());
+            return 100 * (healthPoints / GetComponent<BaseStats>().GetStat(Stat.Health));
         }
 
         public void Die()
@@ -61,7 +61,7 @@ namespace RPG.Resources
             Experience experience = instigator.GetComponent<Experience>(); //Storing the experience
             if (experience == null) return; // if its null just return
 
-            experience.GainExperience(GetComponent<BaseStats>().GetExperienceReward()); //Otherwise we gain experience points
+            experience.GainExperience(GetComponent<BaseStats>().GetStat(Stat.ExperienceReward)); //Otherwise we gain experience points
         }
 
         //Save-----------------------------------------------------
