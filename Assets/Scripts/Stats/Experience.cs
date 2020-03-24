@@ -10,10 +10,16 @@ namespace RPG.Stats
     {
         [SerializeField] float experiencePoints = 0;
 
-        
+        //Actions
+        public event Action expGainedDoStuff;       //= predefined delegate
+
+
+
+
         public void GainExperience(float experience)
         {
             experiencePoints += experience;
+            expGainedDoStuff();
         }
 
         public float GetPoints()

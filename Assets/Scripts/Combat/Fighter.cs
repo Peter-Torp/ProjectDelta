@@ -4,10 +4,13 @@ using RPG.Core;
 using System;
 using RPG.Saving;
 using RPG.Resources;
+using RPG.Stats;
+using System.Collections.Generic;
+using GameDevTV.Utils;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction, ISaveable
+    public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
     {
         [SerializeField] float timeBetweenAttacks = 1f; //Time between our fighters attacks
         [SerializeField] Transform rightHandTransform = null;
@@ -17,15 +20,23 @@ namespace RPG.Combat
         Health target;   //We get access to anything we've put in Health, we do this because we know ALL enemies has health
 
         float timeSinceLastAttack = Mathf.Infinity; //last attack happened a long time ago
-        Weapon currentWeapon = null;
+        LazyValue<Weapon> currentWeapon;
+
+
+        private void Awake() 
+        {
+            currentWeapon = new LazyValue<Weapon>(SetupDefaultWeapon);
+        }
+
+        private Weapon SetupDefaultWeapon()
+        {
+            AttachWeapon(defaultWeapon);
+            return defaultWeapon;
+        }
 
         private void Start()
         {   
-            if (currentWeapon == null)
-            {
-                //look for a resource with this type
-                EquipWeapon(defaultWeapon);
-            }
+            currentWeapon.ForceInit(); //call this or we wont have a visible weapon
         }
 
         //Update is ran on every frame
@@ -49,7 +60,12 @@ namespace RPG.Combat
 
         public void EquipWeapon(Weapon weapon)
         {
-            currentWeapon = weapon;
+            currentWeapon.value = weapon;
+            AttachWeapon(weapon);
+        }
+
+        private void AttachWeapon(Weapon weapon)
+        {
             Animator animator = GetComponent<Animator>();
             weapon.Spawn(rightHandTransform, leftHandTransform, animator);
         }
@@ -85,14 +101,20 @@ namespace RPG.Combat
                 return;
             }
 
-            if (currentWeapon.HasProjectile())
+           // float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
+            float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
+            if (currentWeapon.value.HasProjectile())
             {
-                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject);
+                currentWeapon.value.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject, 
+                damage);
             }
             else
             {
                 //The damage we do to our target is equal to our weapon damage
-                target.TakeDamage(gameObject, currentWeapon.GetDamage());
+                target.TakeDamage(gameObject, damage);
+                 
+                
+                //target.TakeDamage(gameObject, currentWeapon.GetDamage());
             }
         }
 
@@ -104,7 +126,7 @@ namespace RPG.Combat
         private bool GetIsInRange()
         {
             //We calculate the distance between our figther and target from the fighters and targets position and asks if we are in range of our target through weaponRange
-            return Vector3.Distance(transform.position, target.transform.position) < currentWeapon.GetWeaponRange();
+            return Vector3.Distance(transform.position, target.transform.position) < currentWeapon.value.GetWeaponRange();
         }
 
         public bool CanAttack(GameObject combatTarget)
@@ -142,9 +164,27 @@ namespace RPG.Combat
             GetComponent<Animator>().ResetTrigger("stopAttack");
         }
 
+        public IEnumerable<float> GetAdditiveModifiers(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return currentWeapon.value.GetDamage(); // Changes our damage to the damage that our current weapon has equipped
+
+            }
+        }
+
+        public IEnumerable<float> GetPercentageModifiers(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return currentWeapon.value.GetPercentageBonus(); 
+
+            }        
+        }
+
         public object CaptureState()
         {
-            return currentWeapon.name;
+            return currentWeapon.value.name;
         }
 
         public void RestoreState(object state)
@@ -154,5 +194,7 @@ namespace RPG.Combat
             EquipWeapon(weapon);
 
         }
+
+
     }
 }

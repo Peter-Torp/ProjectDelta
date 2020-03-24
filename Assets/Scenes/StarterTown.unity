@@ -24956,6 +24956,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Core
       objectReference: {fileID: 0}
+    - target: {fileID: 8900614905986146146, guid: 8f1b6773e7931874e80f72f15fc4e88a,
+        type: 3}
+      propertyPath: regenrationPercentage
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2237912949256362669, guid: 8f1b6773e7931874e80f72f15fc4e88a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8f1b6773e7931874e80f72f15fc4e88a, type: 3}

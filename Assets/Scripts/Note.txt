@@ -16,6 +16,6 @@
 
 # Health (From)-> BaseStats (From)-> Progression
 
-
+SelfHealEffect = Free Asset
 
 

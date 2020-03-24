@@ -35,10 +35,13 @@ namespace RPG.Saving
             RestoreState(LoadFile(saveFile));
         }
 
+
+        //Delete savefile
         public void Delete(string saveFile)
         {
-            File.Delete(GetPathFromSaveFile(saveFile));
-        }
+            File.Delete(GetPathFromSaveFile(saveFile)); 
+        }   
+
 
         private Dictionary<string, object> LoadFile(string saveFile)
         {

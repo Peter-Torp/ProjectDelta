@@ -26,7 +26,8 @@ namespace RPG.Combat
             }
             Health health = fighter.GetTarget(); // gives us access to our health component
 
-            GetComponent<Text>().text = String.Format("{0:0.0}%", health.GetPercentage()); //puts the text with 1 decimal
+            GetComponent<Text>().text = String.Format("{0:0}/{1:0}", health.GetHealthPoints(),
+            health.GetMaxHealthPoints()); //puts the text with 1 decimal
 
         }
     }

@@ -12,12 +12,17 @@ public class SavingWrapper : MonoBehaviour
     const string defaultSaveFile = "Save";
     [SerializeField] float fadeInTime = 0.2f;   //load fading time
 
-    IEnumerator Start() 
+    private void Awake() 
+    {
+        StartCoroutine(LoadLastScene()); //Calling start after restore to load exp properly
+    }
+    
+    private IEnumerator LoadLastScene() //This was Start()
     {   
+        //what was the last scene saved in the save file. Coroutine.
+        yield return GetComponent<SavingSystem>().LoadLastScene(defaultSaveFile);
         Fader fader = FindObjectOfType<Fader>();
         fader.FadeOutImmediate();
-        //what was the last scene saved in the save file. Coroutine.
-        yield return GetComponent<SavingSystem>().LoadLastScene(defaultSaveFile);  
         yield return fader.FadeIn(fadeInTime);   
     }
 
@@ -30,6 +35,11 @@ public class SavingWrapper : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.S))
         {
             Save();  
+        }
+        //delete key shortcut 
+        if(Input.GetKeyDown(KeyCode.Delete))
+        {
+            Delete();
         }
     }
 
@@ -45,6 +55,11 @@ public class SavingWrapper : MonoBehaviour
     }
 
 
+    //delete savefile 
+    public void Delete()
+    {
+        GetComponent<SavingSystem>().Delete(defaultSaveFile);
+    }
 
 
     }
