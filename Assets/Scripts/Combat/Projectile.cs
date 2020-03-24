@@ -13,7 +13,7 @@ namespace RPG.Combat
     [SerializeField] GameObject[] destoyOnHit = null;
     [SerializeField] float lifeAfterImpact = 2; //maybe some special effect
     Health target = null;
-        GameObject instigator = null;
+    GameObject instigator = null;
     float damage = 0;
 
     private void Start() 

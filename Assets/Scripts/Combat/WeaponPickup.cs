@@ -9,6 +9,8 @@ namespace RPG.Combat
     {
         [SerializeField] Weapon weapon = null;
         [SerializeField] float respawnTime = 5;
+
+        
         //Remember to set Player / Character as Is Kinematic
         private void OnTriggerEnter(Collider other)
         {

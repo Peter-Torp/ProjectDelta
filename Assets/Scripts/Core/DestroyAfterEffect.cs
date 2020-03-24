@@ -6,7 +6,7 @@ namespace RPG.Core
     public class DestroyAfterEffect : MonoBehaviour 
     {
     
-[SerializeField] GameObject targetToDestroy = null;
+    [SerializeField] GameObject targetToDestroy = null;
 
     private void Update() 
     {
