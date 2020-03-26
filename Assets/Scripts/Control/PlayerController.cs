@@ -1,3 +1,4 @@
+using System;
 using RPG.Combat;
 using RPG.Movement;
 using RPG.Resources;
@@ -8,6 +9,23 @@ namespace RPG.Control
     public class PlayerController : MonoBehaviour
     {
         Health health;
+
+        enum CursorType
+        {
+            None, 
+            Movement, 
+            Combat
+        }
+
+        [System.Serializable]
+        struct cursorMapping
+        {
+            public CursorType type; 
+
+        }
+
+        [SerializeField] cursorMapping[] cursorMappings = null;
+
         private void Awake() 
         {
             health = GetComponent<Health>();    
@@ -19,6 +37,8 @@ namespace RPG.Control
             
             if (InteractWithCombat()) return;
             if (InteractWithMovement()) return;
+
+            SetCursor(CursorType.None);
         }
 
         private bool InteractWithCombat()
@@ -39,6 +59,8 @@ namespace RPG.Control
                 {
                     GetComponent<Fighter>().Attack(target.gameObject);  //attack if in range
                 }
+                SetCursor(CursorType.Combat); 
+
                 return true;
             }
             return false;
@@ -54,9 +76,24 @@ namespace RPG.Control
                 {
                     GetComponent<Mover>().StartMoveAction(hit.point, 1f);   //move to where the mouse is clicked
                 }
+                SetCursor(CursorType.Movement);
+                
                 return true;
+                
             }
             return false;
+        }
+
+        /*Set the cursor to different events*/
+        private void SetCursor(CursorType type)
+        {
+            cursorMapping mapping = GetCursorMapping(type);
+            Cursor.SetCursor(mapping.texture, mapping.hotspot, CursorMode .Auto);
+        }
+
+        private cursorMapping GetCursorMapping(CursorType type)
+        {
+
         }
 
         private static Ray GetMouseRay()
