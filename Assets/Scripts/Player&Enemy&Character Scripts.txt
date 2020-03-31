@@ -24,6 +24,7 @@
 - Fighter
 - ActionScheduler
 - Saveable Entity
+- Health
 - Base Stats  
 - Character
 

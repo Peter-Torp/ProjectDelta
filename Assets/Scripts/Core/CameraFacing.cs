@@ -1,20 +1,21 @@
-using UnityEngine; 
+using UnityEngine;
 
-namespace RPG.Core
+namespace RPG.Core 
+{
+    
+public class CameraFacing : MonoBehaviour 
 {
 
-    public class CameraFacing : Monobehavior 
-    {
-
-        private void Update() 
+        void Update() 
         {
-            //paint the canvas toward the maincamera 
-            transfrom.forward = Camera.main.transfrom.forward;
+            //point the canvas/text toward the maincamera 
+            transform.forward = Camera.main.transform.forward;
         }
 
 
 
-    }
+}
+
 
 
 }

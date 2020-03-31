@@ -124,6 +124,8 @@ namespace RPG.Control
                 maxNavMeshProjectionDistance,
                 NavMesh.AllAreas);
             if (!hasCastToNavMesh) return false;
+            
+            target = navMeshHit.position;
             NavMeshPath path = new NavMeshPath();
 
             //Navmesh is a class

@@ -19,5 +19,11 @@
 SelfHealEffect = Free Asset
 
 
+# In case of failure with monobehavior and script errors.
+    Run Unity as admin -> corrects compile errors
+
+
+# FollowCamera = Copy player transform and paste into FC transform values
+    Main camera = align with view.
 
 
