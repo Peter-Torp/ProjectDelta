@@ -125,10 +125,12 @@ namespace RPG.Control
                 NavMesh.AllAreas);
             if (!hasCastToNavMesh) return false;
             NavMeshPath path = new NavMeshPath();
+
+            //Navmesh is a class
             bool hasPath = NavMesh.CalculatePath(transform.position, target, NavMesh.AllAreas, path);
             //return true if found
             if (!hasPath) return false;
-            //Makes it so we cant walk ontop of roofs
+            //Makes it so we cant walk ontop of roofs = navmesh is not connected
             if (path.status != NavMeshPathStatus.PathComplete) return false;
             if (GetPathLength(path) > maxNavPathLength) return false;
             return true;
@@ -137,6 +139,7 @@ namespace RPG.Control
         private float GetPathLength(NavMeshPath path)
         {
             float total = 0;
+            //corners = vector3 corners in navmesh calculation
             if (path.corners.Length < 2) return total;
             for (int i = 0; i < path.corners.Length - 1; i++)
             {
