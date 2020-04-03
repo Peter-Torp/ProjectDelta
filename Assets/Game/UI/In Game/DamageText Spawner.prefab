@@ -43,5 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d39137e4eb7a08c42bb25d01a308401d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damgeTextPrefab: {fileID: 4091810604517021263, guid: 96d886684d394eb438d8718f909472ff,
+  damgeTextPrefab: {fileID: 3545091720190597367, guid: 96d886684d394eb438d8718f909472ff,
     type: 3}

@@ -6,13 +6,13 @@ using System;
 using GameDevTV.Utils;
 using UnityEngine.Events;
 
-namespace RPG.Resources
+namespace RPG.Attributes
 {
     public class Health : MonoBehaviour, ISaveable
     {
         [SerializeField] float regenrationPercentage = 100; //Sets our regen percentage
         [SerializeField] TakeDamageEvent takeDamage; //Is our unity event
-
+        [SerializeField] UnityEvent onDie;
 
         [System.Serializable]
         public class TakeDamageEvent : UnityEvent<float> //subclass
@@ -64,6 +64,7 @@ namespace RPG.Resources
             //If our hitpoints reaches 0 well then we die
             if (healthPoints.value == 0)
             {
+                onDie.Invoke();
                 Die();
                 AwardExperience(instigator);
             }
@@ -89,7 +90,12 @@ namespace RPG.Resources
         public float GetPercentage()
         {
             //Here we do the calculation of our percentage health
-            return 100 * (healthPoints.value / GetComponent<BaseStats>().GetStat(Stat.Health));
+            return 100 * GetFraction();
+        }
+
+        public float GetFraction()
+        {
+            return healthPoints.value / GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
         public void Die()

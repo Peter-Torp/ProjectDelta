@@ -1,5 +1,6 @@
-﻿using RPG.Resources;
+﻿using RPG.Attributes;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RPG.Combat
 {
@@ -15,6 +16,8 @@ namespace RPG.Combat
     Health target = null;
     GameObject instigator = null;
     float damage = 0;
+    [SerializeField] UnityEvent onHit;
+    //arrow launch sound will be invoke when projectile is created.
 
     private void Start() 
     {
@@ -61,6 +64,8 @@ namespace RPG.Combat
 
         //prop
         speed = 0;
+
+        onHit.Invoke();
 
         if(hitEffect != null)
         {
