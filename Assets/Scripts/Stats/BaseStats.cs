@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using GameDevTV.Utils;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RPG.Stats
 {
@@ -14,6 +15,7 @@ namespace RPG.Stats
         [SerializeField] Progression progression = null;
         [SerializeField] GameObject levelUpParticalEffect = null;
         [SerializeField] bool shouldUseModifiers = false;
+        [SerializeField] UnityEvent levelUp;
 
         public event Action onLevelUp;
 
@@ -64,6 +66,8 @@ namespace RPG.Stats
 
         private void LevelUpEffect()
         {
+            //play sound
+            levelUp.Invoke();
             Instantiate(levelUpParticalEffect, transform);
         }
 
@@ -131,9 +135,13 @@ namespace RPG.Stats
                 float XPToLevelUp = progression.GetStat(Stat.ExperienceToLevelUp, characterClass, level); 
                 if(currentXP < XPToLevelUp )
                 {
+
                     return level;
                 }
+                
+                 
             }
+            
 
             return penultimateLevel + 1;
         }
