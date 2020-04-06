@@ -12,6 +12,7 @@ namespace RPG.Movement
     {
         [SerializeField] Transform target;
         [SerializeField] float maxSpeed = 6f;
+        [SerializeField] float maxNavPathLength = 40f;
 
         /*navmesh = where the character can go. Part of Unity AI*/
         NavMeshAgent navMeshAgent;
@@ -37,6 +38,20 @@ namespace RPG.Movement
             MoveTo(destination, speedFraction);
         }
 
+        public bool CanMoveTo(Vector3 destination)
+        {
+            NavMeshPath path = new NavMeshPath();
+            //Navmesh is a class
+            bool hasPath = NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path);
+            //return true if found
+            if (!hasPath) return false;
+            //Makes it so we cant walk ontop of roofs = navmesh is not connected
+            if (path.status != NavMeshPathStatus.PathComplete) return false;
+            if (GetPathLength(path) > maxNavPathLength) return false;
+
+            return true;
+        }
+
         /*navmesh is clicked and destination is saved.*/
         public void MoveTo(Vector3 destination, float speedFraction)
         {
@@ -60,6 +75,19 @@ namespace RPG.Movement
             GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
 
+        private float GetPathLength(NavMeshPath path)
+        {
+            float total = 0;
+            //corners = vector3 corners in navmesh calculation
+            if (path.corners.Length < 2) return total;
+            for (int i = 0; i < path.corners.Length - 1; i++)
+            {
+                total += Vector3.Distance(path.corners[i],
+                    path.corners[i + 1]);
+            }
+
+            return 0;
+        }
 
         //add more states if necessary
         [System.Serializable]

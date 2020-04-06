@@ -49,7 +49,7 @@ namespace RPG.Combat
             if (target == null) return;
             if (target.IsDead()) return;
 
-            if (!GetIsInRange())
+            if (!GetIsInRange(target.transform))
             {
                 GetComponent<Mover>().MoveTo(target.transform.position, 1f);    //1f = fullspeed
             }
@@ -131,10 +131,10 @@ namespace RPG.Combat
             Hit();
         }
 
-        private bool GetIsInRange()
+        private bool GetIsInRange(Transform targetTransform)
         {
             //We calculate the distance between our figther and target from the fighters and targets position and asks if we are in range of our target through weaponRange
-            return Vector3.Distance(transform.position, target.transform.position) < currentWeaponConfig.GetWeaponRange();
+            return Vector3.Distance(transform.position, targetTransform.position) < currentWeaponConfig.GetWeaponRange();
         }
 
         public bool CanAttack(GameObject combatTarget)
@@ -143,6 +143,12 @@ namespace RPG.Combat
             {
                 return false;
             }
+           
+            if (!GetComponent<Mover>().CanMoveTo(combatTarget.transform.position) && !GetIsInRange(combatTarget.transform))
+            {
+                return false;
+            }
+
             Health targetToTest = combatTarget.GetComponent<Health>(); //Gets health from our combatTarget
             return targetToTest != null && !targetToTest.IsDead(); //Checks if our target is not null and is not dead
         }
