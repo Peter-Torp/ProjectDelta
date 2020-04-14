@@ -31,7 +31,10 @@ namespace RPG.Control
 
         private void Update()   //update every frame
         {
-            if (InteractWithUI()) return;
+            /*
+                But with interact with UI!!!!!*******
+                //if (InteractWithUI()) return;
+            */
 
             if(health.IsDead())
             {
@@ -46,8 +49,11 @@ namespace RPG.Control
             SetCursor(CursorType.None);
         }
 
+
+        /*Bug*/
         private bool InteractWithUI()
         {
+            //Debug.Log("Ye");
             if (EventSystem.current.IsPointerOverGameObject())
             {
                 SetCursor(CursorType.UI);
