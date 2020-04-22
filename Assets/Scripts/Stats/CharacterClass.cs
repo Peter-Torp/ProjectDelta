@@ -5,6 +5,7 @@
         Player,
         Grunt,
         Mage,
-        Archer
+        Archer,
+        Boss
     }
 }
