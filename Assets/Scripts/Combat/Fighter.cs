@@ -68,12 +68,8 @@ namespace RPG.Combat
 
         private Weapon AttachWeapon(WeaponConfig weapon)
         {
-            Animator animator = GetComponent<Animator>(); 
-            Debug.Log(animator);
-            Debug.Log(weapon.Spawn(rightHandTransform, leftHandTransform, animator));
+            Animator animator = GetComponent<Animator>();
             return weapon.Spawn(rightHandTransform, leftHandTransform, animator);
-
-            
         }
 
         public Health GetTarget() //Just finds out target so we can display our enemies health display

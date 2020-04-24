@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using RPG.SceneManagement;
 
 namespace RPG.UI 
 {
@@ -15,9 +14,6 @@ public class Customization : MonoBehaviour
 
     private void Start() 
     {
-
-        Debug.Log(Application.persistentDataPath);
-
         index = PlayerPrefs.GetInt("Character selected "); //saves the model to next scene
 
         characterList = new GameObject[transform.childCount]; //array size = number of objects 
@@ -73,14 +69,7 @@ public class Customization : MonoBehaviour
     {
         PlayerPrefs.SetInt("Character selected ", index);
         SceneManager.LoadScene("StarterTown");
-
-        //SavingWrapper sw = gameObject.GetComponent<SavingWrapper>();
-        //sw.Save();
-        
-
     }
-
-    
 
 
 }
