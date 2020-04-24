@@ -6739,11 +6739,7 @@ Transform:
   - {fileID: 1803297322}
   - {fileID: 746763289}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 3
-=======
   m_RootOrder: 4
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &519023140
 PrefabInstance:
