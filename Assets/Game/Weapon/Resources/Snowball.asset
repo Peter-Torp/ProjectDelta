@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b230ac6280f1fcc4d8b72ce75c2fb499, type: 3}
-  m_Name: Sword lvl10-15
+  m_Name: Snowball
   m_EditorClassIdentifier: 
-  animatorOverride: {fileID: 22100000, guid: 077b9d5b9af631b47869354e78f4295a, type: 2}
-  equippedPrefab: {fileID: 393254334051277609, guid: 8fc3f1ecab502d84594394c5f3bae7c2,
+  animatorOverride: {fileID: 22100000, guid: 12191db1cb8ecdf4381a92525faf67c6, type: 2}
+  equippedPrefab: {fileID: 0}
+  weaponDamage: 15
+  percentageBonus: 13
+  weaponRange: 13
+  isRightHanded: 0
+  projectile: {fileID: 6650163236104080619, guid: 42fa6fccb437bc4489df4c65cc5ca108,
     type: 3}
-  weaponDamage: 13
-  percentageBonus: 10
-  weaponRange: 2
-  isRightHanded: 1
-  projectile: {fileID: 0}
