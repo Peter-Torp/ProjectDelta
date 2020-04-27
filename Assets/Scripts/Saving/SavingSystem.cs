@@ -11,7 +11,6 @@ namespace RPG.Saving
 {
     public class SavingSystem : MonoBehaviour
     {
-
         public IEnumerator LoadLastScene(string saveFile)
         {
             Dictionary<string, object> state = LoadFile(saveFile);
@@ -34,8 +33,6 @@ namespace RPG.Saving
         public void Load(string saveFile)
         {
             RestoreState(LoadFile(saveFile));
-
-            Delete(saveFile);   //re-set savefile
         }
 
 
