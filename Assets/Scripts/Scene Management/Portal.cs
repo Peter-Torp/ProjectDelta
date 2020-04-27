@@ -52,9 +52,12 @@ namespace RPG.SceneManagement
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
 
             //load current level
+            yield return new WaitForSeconds(2f);  
             wrapper.Load();
 
             Portal otherPortal = GetOtherPortal();
+
+
             UpdatePlayer(otherPortal);
 
             wrapper.Save(); //save once loaded. 
