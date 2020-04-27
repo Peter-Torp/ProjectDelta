@@ -71,15 +71,12 @@ public class Customization : MonoBehaviour
     //Start the game on another scene
     public void StartButton()
     {
+
         PlayerPrefs.SetInt("Character selected ", index);
         SceneManager.LoadScene("StarterTown");
-
-        //SavingWrapper sw = gameObject.GetComponent<SavingWrapper>();
-        //sw.Save();
         
 
     }
-
     
 
 
