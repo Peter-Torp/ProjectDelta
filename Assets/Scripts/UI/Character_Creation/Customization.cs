@@ -1,74 +1,65 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 namespace RPG.UI 
 {
 public class Customization : MonoBehaviour
 {
 
-    private GameObject[] characterList;
-    private int index = 0;
+    //add more if needed
+    enum AppearanceDetail
+    {
+        CharacterAvatar,
+
+    }
+
+    [SerializeField] private GameObject[] avatars = null;
+    //[SerializeField] private Transform anchor = null;
+    GameObject activeAvatar;
+    private Transform playerTransform = null;
+    private GameObject player = null;
 
     private void Start() 
     {
-        index = PlayerPrefs.GetInt("Character selected "); //saves the model to next scene
+        this.playerTransform = GameObject.FindWithTag("Player").transform;
+        Debug.Log("Player transform is: " + playerTransform);
 
-        characterList = new GameObject[transform.childCount]; //array size = number of objects 
+        this.player = GameObject.FindWithTag("Player");
+        Debug.Log("Player object is: " + playerTransform);
 
-        //Fill array with models
-        for(int i = 0; i < transform.childCount; i++)
-        {
-            characterList[i] = transform.GetChild(i).gameObject;    //get the gameobjct and not transform 
-        }
-
-        //Toggle of their renderer = invisible          **Still in memory
-        foreach(GameObject go in characterList) 
-            go.SetActive(false);    
-        
-        //Toggle on the selected character
-        if(characterList[index])
-            characterList[index].SetActive(true);
+        var avatarComponent = player.GetComponent<Animator>().avatar; 
+        Debug.Log("Got the animator component!");
     }
 
-    public void ButtonNext()
-    {
-        //Toggle off the current model
-        characterList[index].SetActive(false);
 
-        index++;
-        if(index == characterList.Length)
-            index = 0;    //start from the other end of the list if end of array is reached   
-        
-        //Toggle on the new model 
-        characterList[index].SetActive(true);
+    //button left and right for ++ and -- appearance
+    void ButtonRight()
+    {
+        Debug.Log("Button ´Right´ is clicked ");
     }
 
     /*      ------------------------------------------
     set the active avatar to the gameobject reached with buttons
           ------------------------------------------
     */
-
-    public void ButtonPre()
+    
+    void ButtonLeft()
     {
-        //Toggle off the current model
-        characterList[index].SetActive(false);
-
-        index--;
-        if(index < 0)
-            index = characterList.Length - 1;    //start from the other end of the list if 0 is passed   
-        
-        //Toggle on the new model
-        characterList[index].SetActive(true);
+        Debug.Log("Button ´Left´ is clicked ");
     }
 
-    //Start the game on another scene
-    public void StartButton()
+
+    void ApplyModification(AppearanceDetail detail, int id)
     {
-        PlayerPrefs.SetInt("Character selected ", index);
-        SceneManager.LoadScene("StarterTown");
+        switch(detail)
+        {
+            case AppearanceDetail.CharacterAvatar: 
+            if(activeAvatar != null) GameObject.Destroy(activeAvatar);
+
+                break;
+        }
+
     }
 
 
