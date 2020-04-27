@@ -57,10 +57,13 @@ MonoBehaviour:
     texture: {fileID: 2800000, guid: f8c873f1e53e83f4aabf342d6be1dfc3, type: 3}
     hotspot: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   maxNavMeshProjectionDistance: 1
   raycastRadius: 1
 >>>>>>> parent of 21e70832... Merge pull request #2 from Peter-Torp/Magnus
+=======
+>>>>>>> parent of 687f18fa... Merge pull request #1 from Peter-Torp/Magnus
 --- !u!1001 &1080417002832114521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -212,6 +215,9 @@ GameObject:
   m_PrefabInstance: {fileID: 1080417002832114521}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 687f18fa... Merge pull request #1 from Peter-Torp/Magnus
 --- !u!4 &9169026001514661365 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8196697675836667564, guid: 750e3c6876a501e42b5827ec7a3d24d1,
@@ -287,5 +293,8 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2003057488836923449}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 21e70832... Merge pull request #2 from Peter-Torp/Magnus
+=======
+>>>>>>> parent of 687f18fa... Merge pull request #1 from Peter-Torp/Magnus
