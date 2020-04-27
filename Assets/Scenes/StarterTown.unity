@@ -26395,7 +26395,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
     - target: {fileID: 610631651875368217, guid: 8f1b6773e7931874e80f72f15fc4e88a,
         type: 3}
       propertyPath: m_RootOrder
@@ -26410,8 +26409,6 @@ PrefabInstance:
 >>>>>>> parent of 426a9fbe... Character Selection and Music
 =======
 >>>>>>> parent of 687f18fa... Merge pull request #1 from Peter-Torp/Magnus
-=======
->>>>>>> parent of 426a9fbe... Character Selection and Music
     - target: {fileID: 1648146964936672369, guid: 8f1b6773e7931874e80f72f15fc4e88a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
