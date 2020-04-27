@@ -2199,6 +2199,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -3.7000122
       objectReference: {fileID: 0}
+    - target: {fileID: 7403134583389329458, guid: 8f1b6773e7931874e80f72f15fc4e88a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 8.599976
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403134583389329458, guid: 8f1b6773e7931874e80f72f15fc4e88a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -51.300003
+      objectReference: {fileID: 0}
     - target: {fileID: 8026027209126313088, guid: 8f1b6773e7931874e80f72f15fc4e88a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2263,6 +2273,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Core
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900614905986146146, guid: 8f1b6773e7931874e80f72f15fc4e88a,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2218629106600798713, guid: 4162d347ad46b15428a09c77f213c043,
+        type: 3}
+    - target: {fileID: 8900614905986146146, guid: 8f1b6773e7931874e80f72f15fc4e88a,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Spawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f1b6773e7931874e80f72f15fc4e88a, type: 3}
