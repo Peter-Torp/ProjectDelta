@@ -27360,6 +27360,11 @@ PrefabInstance:
       propertyPath: healthToRestore
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2153746753843898167, guid: c51caae204629dd40aaa4d42d656e13a,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5907968646573658052, guid: c51caae204629dd40aaa4d42d656e13a,
         type: 3}
       propertyPath: m_Name

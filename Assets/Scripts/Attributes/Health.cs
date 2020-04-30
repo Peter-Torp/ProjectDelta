@@ -10,7 +10,7 @@ namespace RPG.Attributes
 {
     public class Health : MonoBehaviour, ISaveable
     {
-        [SerializeField] float regenrationPercentage = 100; //Sets our regen percentage
+        [SerializeField] float regenerationPercentage = 100; //Sets our regen percentage
         [SerializeField] TakeDamageEvent takeDamage; //Is our unity event
         [SerializeField] UnityEvent onDie;
 
@@ -78,16 +78,14 @@ namespace RPG.Attributes
         {
             healthPoints.value = Mathf.Min(healthPoints.value + healthToRestore, GetMaxHealthPoints());
         }
-
-
-        public float GetHealthPoints()
+ public float GetHealthPoints()
         {
             return healthPoints.value;
         }
 
         public float GetMaxHealthPoints()
         {
-            return GetComponent<BaseStats>().GetStat(Stat.Health); 
+            return GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
 
@@ -122,17 +120,16 @@ namespace RPG.Attributes
 
         private void RegenerateHealth()
         {
-            float regenHealthPoints = GetComponent<BaseStats>().GetStat(Stat.Health) * (regenrationPercentage / 100);
+            float regenHealthPoints = GetComponent<BaseStats>().GetStat(Stat.Health) * (regenerationPercentage / 100);
             healthPoints.value = Mathf.Max(healthPoints.value, regenHealthPoints);
         }
-
 
         //Save-----------------------------------------------------
 
 
         public object CaptureState()
         {
-            return healthPoints;
+            return healthPoints.value;
         }
 
         public void RestoreState(object state)
