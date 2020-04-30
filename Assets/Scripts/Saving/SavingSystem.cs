@@ -32,6 +32,7 @@ namespace RPG.Saving
 
         public void Load(string saveFile)
         {
+
             RestoreState(LoadFile(saveFile));
         }
 
@@ -46,6 +47,8 @@ namespace RPG.Saving
         private Dictionary<string, object> LoadFile(string saveFile)
         {
             string path = GetPathFromSaveFile(saveFile);
+            Debug.Log(path);
+
             if (!File.Exists(path))
             {
                 return new Dictionary<string, object>();
