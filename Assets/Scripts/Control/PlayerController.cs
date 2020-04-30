@@ -31,7 +31,7 @@ namespace RPG.Control
 
         private void Update()   //update every frame
         {
-            if (InteractWithUI()) return;
+           // if (InteractWithUI()) return;
 
             if(health.IsDead())
             {
@@ -45,17 +45,17 @@ namespace RPG.Control
 
             SetCursor(CursorType.None);
         }
-
+/*  BUG!
         private bool InteractWithUI()
         {
-            if (EventSystem.current.IsPointerOverGameObject())
+             if (EventSystem.current.IsPointerOverGameObject())
             {
                 SetCursor(CursorType.UI);
                 return true;
             }
             return false;
         }
-
+*/
         private bool InteractWithComponent()
         {
             RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
