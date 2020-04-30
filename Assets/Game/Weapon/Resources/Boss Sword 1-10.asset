@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Boss Sword 1-10
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 22100000, guid: 077b9d5b9af631b47869354e78f4295a, type: 2}
-  equippedPrefab: {fileID: 393254334051277609, guid: 9d0d3d69aa701834e8e3de3269dc5c66,
+  equippedPrefab: {fileID: 114281565693579700, guid: 40c70158fa841e344a5bd5f42120a132,
     type: 3}
   weaponDamage: 21
   percentageBonus: 10
