@@ -11493,7 +11493,7 @@ PrefabInstance:
     - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.21
+      value: 25.19
       objectReference: {fileID: 0}
     - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
         type: 3}
@@ -11503,7 +11503,7 @@ PrefabInstance:
     - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 39.49
+      value: 16.87
       objectReference: {fileID: 0}
     - target: {fileID: 1466135209984916882, guid: 97794e8f32d9d574c8ed85db378e8c47,
         type: 3}
@@ -27370,12 +27370,17 @@ PrefabInstance:
     - target: {fileID: 2153746753843898167, guid: c51caae204629dd40aaa4d42d656e13a,
         type: 3}
       propertyPath: healthToRestore
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2153746753843898167, guid: c51caae204629dd40aaa4d42d656e13a,
         type: 3}
       propertyPath: weapon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153746753843898167, guid: c51caae204629dd40aaa4d42d656e13a,
+        type: 3}
+      propertyPath: respawnTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5907968646573658052, guid: c51caae204629dd40aaa4d42d656e13a,
         type: 3}
