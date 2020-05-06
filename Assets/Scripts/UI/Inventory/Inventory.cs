@@ -45,6 +45,47 @@ public class Inventory : MonoBehaviour
     }
 
 
+    private void OnTriggerEnter(Collider other) 
+    {
+        if(other.tag == "Item")
+        {
+            GameObject itemPickedUp = other.gameObject; 
+            Item item = itemPickedUp.GetComponent<Item>();
+
+            AddItem(itemPickedUp, item.id, item.type, item.description, item.icon);  
+        }    
+    }
+
+
+    /*
+        Add item to inventory and check if the slot can hold it or check the next one. 
+        Slot attributes is assigned as the item attributes.
+        Item is then inactive until used and the slot is now set to not empty.
+    */
+    void AddItem(GameObject item, int itemId, string itemType, string itemDescription, Texture2D itemIcon)
+    {
+        //Check slot for items before adding 
+        for(int i = 0; i < allSlots; i++)
+        {
+            if(slot[i].GetComponent<Slot>().empty)
+            {
+                //Add item to list
+                item.GetComponent<Item>().pickedUp = true;
+                
+                slot[i].GetComponent<Slot>().slotItem = item;
+                slot[i].GetComponent<Slot>().icon = itemIcon;
+                slot[i].GetComponent<Slot>().type = itemType;
+                slot[i].GetComponent<Slot>().id = itemId;
+                slot[i].GetComponent<Slot>().description = itemDescription; 
+
+                item.transform.parent = slot[i].transform;  
+                item.SetActive(false); //disable until equiped
+
+                slot[i].GetComponent<Slot>().empty = false; 
+
+            }
+        }
+    }
 
     
 
