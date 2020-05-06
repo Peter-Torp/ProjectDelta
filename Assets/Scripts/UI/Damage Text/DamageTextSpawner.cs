@@ -11,7 +11,11 @@ public class DamageTextSpawner : MonoBehaviour
 
     public void Spawn(float damageAmount)
     {
+        
         DamageText instance = Instantiate<DamageText>(damgeTextPrefab, transform);
+        
+
+        //Debug.Log(damageAmount);
         instance.SetValue(damageAmount);
     
     

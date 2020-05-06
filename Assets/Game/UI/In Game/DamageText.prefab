@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1142533866065581420}
   - component: {fileID: 3545091720190597367}
   - component: {fileID: 4861806456629186487}
+  - component: {fileID: 3941583066986821357}
   m_Layer: 0
   m_Name: DamageText
   m_TagString: Untagged
@@ -175,6 +176,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &3941583066986821357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900099156214078809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5789522dcdf00d94991f118635cce430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetToDestroy: {fileID: 0}
 --- !u!1 &7342528253752194072
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,7 +223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.3261261, y: 0.4359994}
+  m_AnchoredPosition: {x: 0.058, y: 0.344}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1723757041880690420
@@ -244,7 +258,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 100
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
