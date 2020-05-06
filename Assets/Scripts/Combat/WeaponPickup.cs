@@ -1,4 +1,5 @@
-﻿using RPG.Control;
+﻿using RPG.Attributes;
+using RPG.Control;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,9 +25,19 @@ namespace RPG.Combat
 
         private void Pickup(GameObject subject)
         {
-            subject.GetComponent<Fighter>().EquipWeapon(weapon);
+            if (weapon != null)
+            {
+                Debug.Log($"{subject.name} has picked up a {name}");
+                subject.GetComponent<Fighter>().EquipWeapon(weapon);
+            }
+            if (healthToRestore > 0)
+            {
+                Debug.Log($"{subject.name} has picked up an item that heals for {healthToRestore}");
+                subject.GetComponent<Health>().Heal(healthToRestore);
+            }
             StartCoroutine(HideForSeconds(respawnTime));
         }
+
 
         private IEnumerator HideForSeconds(float seconds) //How long does an item hide for
         {
