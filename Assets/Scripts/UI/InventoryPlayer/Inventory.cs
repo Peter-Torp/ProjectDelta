@@ -50,6 +50,9 @@ public class Inventory : MonoBehaviour
     }
 
 
+    /*
+    Only counts for item objects
+    */
     private void OnTriggerEnter(Collider other) 
     {
         if(other.tag == "Item")
@@ -85,6 +88,39 @@ public class Inventory : MonoBehaviour
 
                 item.transform.parent = slot[i].transform;  
                 item.SetActive(false); //disable until equiped
+
+                slot[i].GetComponent<Slot>().UpdateSlot();
+                slot[i].GetComponent<Slot>().empty = false; 
+
+            }
+
+            return;
+        }
+    }
+
+
+    /*
+    Add a weapon to the inventory list.
+    The gameObject should hold the information of the weapon
+    */
+    void AddWeapon(GameObject weapon, Sprite weaponIcon, string weaponType, int weaponId, string weaponDescription)
+    {
+        //Check slot for items/weapons before adding 
+        for(int i = 0; i < allSlots; i++)
+        {
+            if(slot[i].GetComponent<Slot>().empty)
+            {
+                //Add item to list
+                //item.GetComponent<Item>().pickedUp = true;
+                
+                slot[i].GetComponent<Slot>().slotItem = weapon;
+                slot[i].GetComponent<Slot>().icon = weaponIcon;
+                slot[i].GetComponent<Slot>().type = weaponType;
+                slot[i].GetComponent<Slot>().id = weaponId;
+                slot[i].GetComponent<Slot>().description = weaponDescription; 
+
+                weapon.transform.parent = slot[i].transform;  
+                weapon.SetActive(false); //disable until equiped
 
                 slot[i].GetComponent<Slot>().UpdateSlot();
                 slot[i].GetComponent<Slot>().empty = false; 

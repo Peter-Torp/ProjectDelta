@@ -22,10 +22,19 @@ public class WeaponConfig : ScriptableObject
     [SerializeField] float weaponRange = 2f; //Our WeaponRange
     [SerializeField] bool isRightHanded = true;
     [SerializeField] Projectile projectile = null;
+    [SerializeField] string type = null;
+    [SerializeField] int id = 0;
+    [SerializeField] string description = null;
+    [SerializeField] Sprite weaponIcon;
+
+    //bool pickedup????
 
     const string weaponName = "Weapon";
 
 
+    /*
+        Place weapon in player hand. Override the animator with new. 
+    */
     public Weapon Spawn(Transform rightHand, Transform leftHand, Animator animator)   
     {
         DestroyOldWeapon(rightHand, leftHand); 
