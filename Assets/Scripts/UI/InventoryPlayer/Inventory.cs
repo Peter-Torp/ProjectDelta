@@ -1,6 +1,6 @@
 using UnityEngine; 
 
-namespace RPG.Inventory
+namespace RPG.InventoryPlayer
 {
 
 public class Inventory : MonoBehaviour 
@@ -22,7 +22,12 @@ public class Inventory : MonoBehaviour
 
         for(int i = 0; i < allSlots; i++)
         {
-            slot[i] = slotHolder.transform.GetChild(i).gameObject;      //instantiate slots
+            //instantiate slots
+            slot[i] = slotHolder.transform.GetChild(i).gameObject;      
+ 
+            //check if slot is empty
+            if(slot[i].GetComponent<Slot>() == null)
+            slot[i].GetComponent<Slot>().empty = true;
         }
     }
 
@@ -62,7 +67,7 @@ public class Inventory : MonoBehaviour
         Slot attributes is assigned as the item attributes.
         Item is then inactive until used and the slot is now set to not empty.
     */
-    void AddItem(GameObject item, int itemId, string itemType, string itemDescription, Texture2D itemIcon)
+    void AddItem(GameObject item, int itemId, string itemType, string itemDescription, Sprite itemIcon)
     {
         //Check slot for items before adding 
         for(int i = 0; i < allSlots; i++)
@@ -81,11 +86,15 @@ public class Inventory : MonoBehaviour
                 item.transform.parent = slot[i].transform;  
                 item.SetActive(false); //disable until equiped
 
+                slot[i].GetComponent<Slot>().UpdateSlot();
                 slot[i].GetComponent<Slot>().empty = false; 
 
             }
+
+            return;
         }
     }
+
 
     
 

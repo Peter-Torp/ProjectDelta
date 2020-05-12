@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114289878906211072, guid: 15ec7bbe64959734aa3fb4e699f9e550,
+        type: 3}
+      propertyPath: type
+      value: Melee weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 114289878906211072, guid: 15ec7bbe64959734aa3fb4e699f9e550,
+        type: 3}
+      propertyPath: description
+      value: Simple sword for combat
+      objectReference: {fileID: 0}
+    - target: {fileID: 114289878906211072, guid: 15ec7bbe64959734aa3fb4e699f9e550,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 5fd50594014b70e48bd6993443d46b32,
+        type: 3}
     - target: {fileID: 3161648453679705823, guid: 15ec7bbe64959734aa3fb4e699f9e550,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3161648453679705823}
   - component: {fileID: 1086172995746268763}
   - component: {fileID: 7018683843757614584}
+  - component: {fileID: 114289878906211072}
   m_Layer: 0
   m_Name: Root Pickup
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,3 +59,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 11400000, guid: cddd5d513f697c74f95aec31d932d4fd, type: 2}
+  healthToRestore: 0
+  respawnTime: 5
+--- !u!114 &114289878906211072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3276835646313663755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec4c4c52fb115142889e6c84d14f56d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 
+  id: 0
+  description: 
+  icon: {fileID: 0}
+  pickedUp: 0

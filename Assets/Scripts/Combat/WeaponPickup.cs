@@ -23,13 +23,14 @@ namespace RPG.Combat
             }
         }
 
-        private void Pickup(GameObject subject)
+        private void Pickup(GameObject subject) //subject = player
         {
             if (weapon != null)
             {
                 Debug.Log($"{subject.name} has picked up a {name}");
                 subject.GetComponent<Fighter>().EquipWeapon(weapon);
             }
+           
             if (healthToRestore > 0)
             {
                 Debug.Log($"{subject.name} has picked up an item that heals for {healthToRestore}");
